@@ -708,7 +708,6 @@ h3 {
 }
 
 .solo-description {
-  text-align: center;
   margin: 1em 0;
   line-height: 1.8;
   text-transform: capitalize;
@@ -1174,7 +1173,8 @@ img {
     margin-bottom: .25em
   }
 
-  .main-description {
+  .main-description,
+  .solo-description{
     text-align: center;
   }
 
