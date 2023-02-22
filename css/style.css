@@ -1117,6 +1117,9 @@ img {
   .solo-description.hidden {
     display: block;
     text-align: center;
+    order: 0;
+    position: relative;
+    margin-top: 1.75em;
   }
 
   .absolute .mini-container:last-of-type,
