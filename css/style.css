@@ -1047,9 +1047,8 @@ img {
   .lp-container {
     padding: 1em 0;
     position: relative;
-    bottom: 0;
     align-items: center;
-    }
+   }
 
   .main-info {
     text-align: left;
