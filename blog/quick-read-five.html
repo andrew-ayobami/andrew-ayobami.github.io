@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakuma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-bar" id="header">
+
+        <nav class="navbar holder">
+            <div class="header-logo">
+                <img src="../images/thepakuma-logo---Princewill-Akuma---3-edited.png" alt="brand logo">
+      
+              </div>
+
+              <ul class="nav-lists">
+                <li class="nav-list"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-list"><a href="./blog.html" class="current-page nav-link">Blog</a></li>
+
+                <li class="nav-list"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-list resources"><a href="../resources.html" class="nav-link">Resources</a>
+                  
+                </li>
+                <li class="nav-list"><a href="../work.html" class="nav-link">Work with me</a></li>
+                <li class="nav-list"><a href="../contact.html" class="last-child">Contact</a></li>
+              </ul>
+
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+        <div class="form-container">
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="What are you looking for?">
+                <button class="btn form-btn icon-box" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close.</span>
+        </div>
+        <div class="btn form-close-btn icon-box place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+
+    <section class="blog-post section-header-offset">
+        <div class="blog-post-container container">
+            <div class="blog-post-data">
+                <h3 class="title blog-post-title">Is VR the future?</h3>
+                <div class="article-data">
+                    <span>feb 6th 2023</span>
+                    <span class="article-data-spacer"></span>
+                    <span>4 Min read</span>
+                </div>
+                <img src="./assets/images/quick_read/quick_read_5.jpg" alt="">
+            </div>
+
+            <div class="container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente repellat consequatur culpa, repudiandae aut dolores iusto. Rem natus soluta, dolores, ad deleniti, aut dolorem corrupti quasi amet unde delectus hic?
+                </p>
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
+                </p>
+
+                <blockquote class="quote">
+                    <p><span><i class="ri-double-quotes-l"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, laboriosam voluptatum quos non consequuntur nesciunt necessitatibus tempora quod inventore corporis rem nihil itaque, at provident minus aliquam veritatis. Labore?  <span><i class="ri-double-quotes-r"></i></span></p>
+                </blockquote>
+            
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
+                </p>
+
+                <div class="author d-grid">
+                    <div class="author-image-box">
+                        <img src="./assets/images/author.jpg" alt="" class="article-image">
+                    </div>
+                    <div class="author-about">
+                        <h3 class="author-name">John Doe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quis repellat rerum, possimus cumque dolor repellendus eligendi atque explicabo exercitationem id.</p>
+                        <ul class="list social-media">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="newsletter-container">
+            <div class="container">
+              <div class="newsletter-wrapper">
+                <h3>Newsletter</h3>
+                <p class="para">Receive marketing and career insights in your
+                  inbox.</p>
+              </div>
+            
+              <form class="newsletter form" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" placeholder="Enter your Name here" class="name" required >
+      
+                <input type="email" placeholder="Enter your email here" class="email" required >
+                <button class="btn btn-form" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+         </div>
+         <div class="top-container">
+          <a href="#top" class="top">Back to top 
+            <ion-icon class="icon-up" name="chevron-up-outline"></ion-icon> 
+          </a>
+      
+         </div>
+             
+         <div class="footer-container">
+          <div class="container">
+             <div class="sm-icons">
+               <a href="https://www.facebook.com/ThePakuma" class="sm-link"><ion-icon name="logo-facebook"></ion-icon></a>
+               <a href="https://www.linkedin.com/in/thepakuma/" class="sm-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+               
+             </div>
+          </div>
+         </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

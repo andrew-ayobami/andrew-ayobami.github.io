@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ThePakuma Website</title>
+
+  <!-- IMPORTED GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="header-bar" id="#top">
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="header-logo">
+           <img src="images/thepakuma-logo---Princewill-Akuma---3-edited.png" alt="brand logo">
+
+        </div>
+
+        <ul class="nav-lists">
+          <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-list"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-list resources"><a href="resources.html" class="nav-link">Resources</a>
+            
+            <ion-icon class="arrow-svg" name="chevron-down-outline"></ion-icon>
+
+            <ul class="dropdown">
+              <li><a href="blog/blog.html">Blog</a></li>
+          
+              <li><a href="#">Resources</a></li>
+            </ul> 
+          
+          </li>
+          <li class="nav-list"><a href="work.html" class="nav-link">Work with me</a></li>
+          <li class="nav-list"><a href="contact.html" class="last-child current-page">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      </nav>
+  </div>
+  </header>
+
+  <section class="container contact landing-page">
+    <div class="contact mini-container">
+      <div class="lp-image-container"> 
+        <img src="images/Princewill-Akuma---Headshot.jpg" alt="Princewill Akuma ">
+      </div>
+      <div class="contact-text">
+        <h2>Book a meeting with Princewill</h2>
+        <p>Here to support and work with you to attain the results you seek in your marketing or career. Please fill out the contact form and anticipate an urgent response.</p>
+      </div>
+    </div>
+
+    <form onsubmit="sendMessageEmail(); reset(); return false;" class="contact-form">
+      <div class="info-box">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="name" required>
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" class="email" required>
+       
+      </div>
+      <div class="message-box">
+        <label for="message">Message</label>
+        <textarea name="" id="message" style="resize: none;" required></textarea>
+        <div class="btn-container">
+          <button class="btn btn-form" type="submit">Submit</button>
+        </div>
+      </div>
+  
+    </form>
+  </section>
+
+  <footer>   
+   <div class="footer-container">
+    <div class="container">
+       <div class="sm-icons">
+        <a href="https://www.facebook.com/ThePakuma" class="sm-link"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/thepakuma/" class="sm-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
+    </div>
+   </div>
+  </footer>
+ 
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+   <script src="js/contact.js"></script>
+  </body>
+  </html>
