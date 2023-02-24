@@ -96,9 +96,7 @@ body.light-theme{
 }
 
 .header-logo{
-  display: flex;
-  max-width: 120px;
-  height: 100%;
+  max-width: 170px;
 }
 
 .header-logo img {
