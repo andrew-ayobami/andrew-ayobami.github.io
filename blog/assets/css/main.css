@@ -99,6 +99,7 @@ body.light-theme{
   max-width: 170px;
   margin-top: .25em;
   margin-left: -3.4em;
+    border: 1px solid red;
 }
 
 .place-items-center{
