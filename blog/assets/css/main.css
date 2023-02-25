@@ -31,7 +31,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 57.5%;
 }
 
 body{
@@ -97,11 +97,9 @@ body.light-theme{
 
 .header-logo{
   max-width: 170px;
+  margin-top: .25em;
 }
 
-.header-logo img {
-    width: 100%;
-}
   
 
 .place-items-center{
@@ -1033,7 +1031,6 @@ header .last-child {
   .newsletter-container .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.5em;
   }
   
   .newsletter-wrapper {
@@ -1169,6 +1166,8 @@ input::placeholder {
   
     .burger {
       display: block;
+      position: fixed;
+      right: .5em;
     }
 
     .trending-news-box{
