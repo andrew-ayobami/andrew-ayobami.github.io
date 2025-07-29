@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dex Trending (API)</title>
+    <link rel="icon" href="images/dextbot-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "1nu_cLs0vo9-hav0J",
+        });
+    })(); 
+    </script>
+</head>
+<body>
+    
+    <header class="breakpoint-service">
+        <div class="container header-container">
+            <a href="#" class="logo-holder">
+                <img src="images/dextbot-logo.png" alt="" srcset="">
+                <span class="logo-text">Dex Trending</span>
+            </a>
+
+            <div class="nav-btn-holder">
+                <a href="#breakpoint1" class="nav-btn breakpoint">Trend your token</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="landing-page">
+        <div class="container">
+            <div class="lp-content">
+                <p class="main-text">
+                    Best Quality: Your token will be trending 99% of the time Guaranteed without dropping
+                </p>
+                <a href="#" class="action-btn">Join our community
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </a>
+                <h1 class="main-heading">Welcome to Dex Trending (API)</h1>
+                <p class="main-text">
+                    Quickly get your token trending among DEXTools' hot pairs. 
+                    Complete all information accurately to secure a spot in the next trending pairs.
+                </p>
+                <a href="buybot.html" class="buy-btn">Purchase Today</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container" id="breakpoint1">
+        <div class="container" >
+            <form action="" id="form">
+                <div class="form-holder" >
+                    <h2 class="form-heading scroll-animation" >
+                        DEX Trending Details
+                    </h2>
+                    <p class="main-text scroll-animation">Your token is one step away from trending on DEXTools' hot pairs. 
+                        Start the journey by filling this form.
+                    </p>
+                    <div class="form-one form">
+                        <label for="name" class="scroll-animation">Project Name</label>
+                        <input type="text" id="name" class="name scroll-animation" required>
+                        <label for="contact" class="scroll-animation">Contract Address</label>
+                        <input type="text" id="contact" class="address scroll-animation" required>
+                        <label for="token chain" class="scroll-animation">Token Chain</label>
+                        <select name="chain" id="chain-dropdown" class="scroll-animation" required>
+                            <option value=""> -- Select Chain -- </option>
+                            <option value="BSC">BNB Smart Chain (BSC)</option>
+                            <option value="SOL">Solana</option>
+                            <option value="ETH">Ethereum</option>
+                            <option value="TRON">Tron</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <label for="dextool link" class="scroll-animation">Dextool Link</label>
+                        <input type="text" id="dx-link" class="dx-link scroll-animation">
+                        <label for="email" class="scroll-animation">Email ADDRESS</label>
+                        <input type="email" id="email" class="email scroll-animation">
+                    </div>
+        
+                    <div class="form-two form">
+                        <label for="duration" class="duration scroll-animation">Duration</label>
+                        <select name="duration" id="duration-dropdown" class="scroll-animation" required>
+                            <option value=""> -- Select Duration -- </option>
+                            <option value="24 hours">24 Hours Trending</option>
+                            <option value="48 hours">48 Hours Trending</option>
+                            
+                        </select>
+        
+                        <label for="price" class="scroll-animation">Price</label>
+                        <input type="text" id="price" class="price scroll-animation" readonly>
+                    </div>
+                </div>
+                <div id="overlay">
+                    <div class="spinner"></div>
+                </div>
+                
+                <p class="form-text scroll-animation">
+                    It’s big C5 bot programmed with a new smart algorithm 
+                    to keep trending stable which helps In volume boosting and LP increase.
+                </p>
+                <button type="button" onclick="sendMail()" id="submitButton" class="buy-btn scroll-animation">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <div class="box">
+                <ion-icon name="trending-up-outline" class="arrow-icon scroll-animation-two"></ion-icon>
+
+                <p class="main-text scroll-animation-two">
+                    DexTools trending service for the Hot Pairs section which is available as a 
+                    crypto marketing service for tokens and cryptocurrencies. Propel your token on 
+                    DexTools by having sufficient volume, and then right to the top of the DexTools
+                    trending section (also referred to as the DexTools Hot Pairs section)! Buy DexTools trending 
+                    to start trending today with our scheduled DexTools Hot Pairs trending service.
+                </p>
+                <h3 class="scroll-animation-two">
+                    Promote your project on DexTools by getting it Trending!
+                </h3>
+            </div>
+
+            <!-- <div class="box box-two scroll-animation-two">
+                <h1 class="box-header scroll-animation-two">How Dex Trending (API) Works?</h1>
+                <ul class="dextbot-list scroll-animation-two">
+                    <li class="dextbot-lists">Fill in all details correctly</li>
+                    <li class="dextbot-lists">Select the suitable placement and duration for trending</li>
+                    <li class="dextbot-lists">Through confirm all details are written correctly</li>
+                    <li class="dextbot-lists">
+                        Trending is done depending on the pressure secured on bots once done 
+                        filling information trending will begin in 20 minutes max.
+                    </li>
+                    <li class="dextbot-lists">The bot is always active and works very effectively</li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="action">
+        <div class="container">
+            <h2 class="main-heading scroll-animation-two">
+                Get news about cryptocurrencies every day!
+            </h2>
+
+            <p class="main-text">
+                Be part of DEX Trending community! The premium community of DEXTools
+            </p>
+            <p class="main-text">
+                A group of elite traders and investors focused on DeFi. You can join now our 
+                exclusive Telegram and get all community benefits
+                including contests, investing tips and advanced market info. There are 3 tiers:
+            </p>
+            
+            <div class="service-container">
+                <div class="service-box">
+                    <h1 class="box-heading">
+                        Buy Bot
+                    </h1>
+                    <p class="box-text">
+                        Empower your visibility with DextBuyBot, ascend 
+                        on Dextools.io, and seize the Trending status. Powered by Dextools.io
+                    </p>
+                    <div class="svg-box-holder scroll-animation-three">
+                        <div class="svg-box">
+                            <svg viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M149.598 236.262a6.773 6.773 0 0 0-.426-6.997l-38.199-55.309a6.775 6.775 0 0 0-11.147 0l-38.197 55.309a6.775 6.775 0 0 0 11.148 7.7l32.624-47.237 25.288 36.613h-11.453a6.775 6.775 0 0 0-6.773 6.774v129.623H98.338V233.115a6.775 6.775 0 0 0-13.548 0v136.396a6.775 6.775 0 0 0 6.774 6.775h27.671a6.776 6.776 0 0 0 6.774-6.775V239.89h17.59a6.777 6.777 0 0 0 5.999-3.628zM119.234 391.283H91.563a6.774 6.774 0 0 0-6.774 6.773v30.093a6.774 6.774 0 0 0 6.774 6.774h27.671a6.775 6.775 0 0 0 6.774-6.774v-30.093a6.773 6.773 0 0 0-6.774-6.773zm-6.773 30.092H98.338v-16.544h14.123v16.544zM119.234 449.92H91.563a6.774 6.774 0 0 0 0 13.548h27.671a6.773 6.773 0 1 0 0-13.548zM450.373 180.224l-38.198-55.311a6.772 6.772 0 0 0-11.147 0l-38.199 55.311a6.775 6.775 0 0 0 11.148 7.7l32.626-47.239 25.285 36.615h-11.449a6.775 6.775 0 0 0-6.775 6.774v69.621h-14.123v-69.621a6.774 6.774 0 0 0-13.547 0v76.395a6.775 6.775 0 0 0 6.774 6.774h27.672a6.775 6.775 0 0 0 6.773-6.774v-69.62h17.588a6.774 6.774 0 0 0 5.572-10.625zM213.539 116.188a6.776 6.776 0 0 0 9.424-1.724l32.625-47.238 25.288 36.613h-11.452a6.776 6.776 0 0 0-6.774 6.774v73.494h-14.123v-73.494a6.775 6.775 0 0 0-13.547 0v80.268a6.774 6.774 0 0 0 6.773 6.774h27.672a6.775 6.775 0 0 0 6.774-6.774v-73.493h17.589a6.775 6.775 0 0 0 5.574-10.624l-38.199-55.309a6.775 6.775 0 0 0-11.148 0l-38.199 55.309a6.773 6.773 0 0 0 1.723 9.424zM420.438 282.242h-27.672a6.774 6.774 0 0 0-6.774 6.773v30.093a6.774 6.774 0 0 0 6.774 6.774h27.672a6.774 6.774 0 0 0 6.773-6.774v-30.093a6.774 6.774 0 0 0-6.773-6.773zm-6.776 30.092h-14.123V295.79h14.123v16.544zM420.438 340.879h-27.672a6.774 6.774 0 0 0 0 13.548h27.672a6.775 6.775 0 0 0 0-13.548zM367.334 298.057c-21.506-11.235-40.201-33.391-40.414-33.646-31.377-37.027-66.147-36.587-71.332-36.304-5.185-.289-39.965-.713-71.363 36.339-.072.086-7.241 8.625-17.869 17.82a6.773 6.773 0 0 0-.689 9.555 6.771 6.771 0 0 0 9.554.69c11.449-9.904 19.081-18.996 19.37-19.342 28.511-33.645 59.155-31.614 60.388-31.527.408.038.813.038 1.221 0 .313-.019 31.606-2.431 60.356 31.491.708.85 15.258 18.123 34.438 30.928-19.178 12.807-33.726 30.074-34.408 30.893-28.511 33.646-59.142 31.625-60.387 31.527a6.564 6.564 0 0 0-1.222 0c-.312.014-31.608 2.431-60.355-31.491-.828-.993-20.566-24.423-44.505-36.931a6.771 6.771 0 0 0-9.141 2.865 6.775 6.775 0 0 0 2.865 9.141c21.506 11.238 40.201 33.393 40.415 33.647 28.503 33.637 59.813 36.358 69.189 36.358.945 0 1.667-.028 2.142-.055 5.2.293 39.965.715 71.363-36.34.186-.221 18.811-22.337 40.385-33.611a6.774 6.774 0 0 0-.001-12.007z" fill="#ffffff" class="fill-000000"></path><path d="M225.707 275.979a6.77 6.77 0 0 0-9.396 1.866c-5.194 7.768-7.94 16.833-7.94 26.215 0 26.037 21.181 47.22 47.217 47.22s47.219-21.183 47.219-47.22c0-26.036-21.183-47.217-47.219-47.217-5.551 0-10.987.955-16.156 2.838a6.777 6.777 0 0 0-4.047 8.685 6.777 6.777 0 0 0 8.685 4.047 33.533 33.533 0 0 1 11.519-2.021c18.566 0 33.671 15.104 33.671 33.668 0 18.567-15.104 33.672-33.671 33.672-18.564 0-33.669-15.104-33.669-33.672a33.512 33.512 0 0 1 5.653-18.686 6.771 6.771 0 0 0-1.866-9.395z" fill="#ffffff" class="fill-000000"></path><path d="M262.362 306.992v-5.186c0-3.741-3.034-6.775-6.774-6.775s-6.773 3.034-6.773 6.775v5.186a6.774 6.774 0 0 0 13.547 0z" fill="#ffffff" class="fill-000000"></path></svg>
+                        </div>
+                        <div class="svg-box">
+                            <svg viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><circle cx="89" cy="101" fill="none" r="8" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" class="stroke-00aeef"></circle><circle cx="49" cy="101" fill="none" r="8" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" class="stroke-00aeef"></circle><path d="M29 33h83.08c2.807 0 4.741 2.816 3.733 5.436L99.877 79.872A8 8 0 0 1 92.41 85H45.608a8 8 0 0 1-7.856-6.49L29 33zM28.946 33.01l-1.517-7.58A8 8 0 0 0 19.585 19h-7.241M89.904 45h3M32 45h48.904" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" class="stroke-00aeef"></path></svg>    
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h1 class="box-heading">
+                        Price Bot
+                    </h1>
+                    <p class="box-text">
+                        Get the latest price of your crypto tokens with the Dextool PRICE BOT
+                    </p>
+                    <div class="svg-box-holder scroll-animation-three">
+                        <div class="svg-box">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.928 11.607c-.202-.488-.635-.605-.928-.633V8c0-1.103-.897-2-2-2h-6V4.61c.305-.274.5-.668.5-1.11a1.5 1.5 0 0 0-3 0c0 .442.195.836.5 1.11V6H5c-1.103 0-2 .897-2 2v2.997l-.082.006A1 1 0 0 0 1.99 12v2a1 1 0 0 0 1 1H3v5c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5a1 1 0 0 0 1-1v-1.938a1.006 1.006 0 0 0-.072-.455zM5 20V8h14l.001 3.996L19 12v2l.001.005.001 5.995H5z" fill="#eaf6f7" class="fill-000000"></path><ellipse cx="8.5" cy="12" rx="1.5" ry="2" fill="#eaf6f7" class="fill-000000"></ellipse><ellipse cx="15.5" cy="12" rx="1.5" ry="2" fill="#eaf6f7" class="fill-000000"></ellipse><path d="M8 16h8v2H8z" fill="#eaf6f7" class="fill-000000"></path></svg>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="service-box">
+                    <h1 class="box-heading">
+                        New Pairs Bot
+                    </h1>
+                    <p class="box-text">
+                        Keep track of the newely listed crypto tokens on Dextool, NEW PAIR BOT 
+                        helps in adding your token to Dextool.
+                    </p>
+                    <div class="svg-box-holder scroll-animation-three">
+                        <div class="svg-box">
+                            <svg data-name="Layer 1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><ellipse cx="40" cy="34.988" rx="35" ry="23" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" class="stroke-000000"></ellipse><path d="M66.8 28.617a10.924 10.924 0 0 1 2.2 6.371c0 6.049-5.722 11.481-14.1 14.5" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" class="stroke-000000"></path><path d="M5 34.988v12.847a13 13 0 0 0 4.778 10.08c7.637 6.225 18.353 10.1 30.222 10.1s22.585-3.873 30.222-10.1A13 13 0 0 0 75 47.835V34.988M40 67.632v-9.288M51.667 66.368v-9.337M63.333 62.25v-9.262M28.333 66.368v-9.337M16.667 62.447v-4.728" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" class="stroke-000000"></path><path d="m59.242 24-31.28 9.861c-.225.071-.49-.056-.45-.217.985-3.959 6.222-6.991 12.523-6.991a18.946 18.946 0 0 1 2.908.224 4.517 4.517 0 0 0 2.016-.168l4.247-1.339c.441-.139.483-.554.062-.716A25.907 25.907 0 0 0 40.035 23c-10.075 0-18.271 5.379-18.271 12 0 .178.017.357.03.535h-.009c.015.165-.124.32-.351.391l-.685.216c-.537.169-.878.526-.878.917v2.771c0 .3.476.5.887.367l38.493-12.136c.537-.169.878-.526.878-.917v-2.773c0-.3-.476-.497-.887-.371ZM20.758 45.988l31.28-9.861c.225-.071.49.056.45.217-.985 3.959-6.222 6.991-12.523 6.991a18.946 18.946 0 0 1-2.908-.224 4.517 4.517 0 0 0-2.016.168l-4.247 1.339c-.441.139-.483.554-.062.716A25.907 25.907 0 0 0 39.965 47c10.074 0 18.271-5.383 18.271-12 0-.178-.017-.357-.03-.535h.009c-.015-.165.124-.32.351-.391l.685-.216c.537-.169.878-.526.878-.917v-2.779c0-.3-.476-.5-.887-.367L20.749 41.93c-.537.169-.878.526-.878.917v2.774c0 .3.476.496.887.367Z" fill="#ffffff" class="fill-000000"></path></svg>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="final-action-container">
+        <div class="container">
+            <div class="action-img-holder scroll-animation-two">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 8a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Zm2.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z" fill="#ffffff" class="fill-000000"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.738 6c2.486-3.078 6.284-5 10.46-5H23v1.802c0 4.176-1.922 7.974-5 10.46v.639a7.22 7.22 0 0 1-5.804 7.08L11 21.22v-5.806L8.586 13H2.78l.24-1.196A7.22 7.22 0 0 1 10.1 6h.638ZM9.372 8.05A5.224 5.224 0 0 0 5.374 11h2.832c.275-1.042.67-2.03 1.166-2.95Zm.724 3.631 2.223 2.223a11.44 11.44 0 0 0 8.68-10.902 11.44 11.44 0 0 0-10.903 8.68ZM13 15.794v2.832a5.224 5.224 0 0 0 2.95-3.998c-.92.496-1.908.89-2.95 1.166Z" fill="#ffffff" class="fill-000000"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M2.523 17.273a3.325 3.325 0 1 1 4.205 4.206L.42 23.58l2.103-6.308ZM5.677 17c-.57 0-1.077.365-1.257.906l-.838 2.513 2.513-.838A1.324 1.324 0 0 0 5.677 17Z" fill="#ffffff" class="fill-000000"></path></svg>
+            </div>
+            <h2 class="form-heading scroll-animation-two">Elevate your launches to the next level</h2>
+            <div class="action-btn-holder">
+                <a href="buybot.html" class="buy-btn">Purchase today</a>
+                <a href="#breakpoint1" class="action-btn breakpoint">Trend your token</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="right">
+                &copy; Dex Trending (API) 2024. All rights reserved
+            </p>
+            <p class="footer-text">
+                All content available on our website, on hyperlinked websites, and on applications, 
+                forums, blogs, social media accounts and other platforms associated with DEXTools is 
+                intended solely to provide you with general information. We make no warranties of any
+                kind with respect to our content, including, but not limited to, the accuracy and currency 
+                of the information.
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
