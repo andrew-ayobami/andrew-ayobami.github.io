@@ -35,54 +35,79 @@
             <div class="form-grid">
                 <div class="form-column">
                     <div class="form-group">
-                        <label for="projectName">Project Name</label>
-                        <input type="text" id="projectName" name="projectName" required>
-                    </div>
-                    <div class="form-group">
                         <label for="contractAddress">Contract Address</label>
                         <input type="text" id="contractAddress" name="contractAddress" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="tokenChain">Token Chain</label>
-                        <input type="text" id="tokenChain" name="tokenChain" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="dextoolsLink">Dextools Link</label>
-                        <input type="text" id="dextoolsLink" name="dextoolsLink">
                     </div>
                 </div>
 
                 <div class="form-column">
                     <div class="form-group">
-                        <label for="duration">Duration</label>
-                        <select id="duration" name="duration">
-                            <option value="">-- Select Duration --</option>
-                            <option value="6">6 Hours Trending</option>
-                            <option value="12">12 Hours Trending</option>
-                            <option value="24">24 Hours Trending</option>
-                            <option value="48">48 Hours Trending</option>
+                        <label for="tokenChain">Token Chain</label>
+                        <select id="tokenChain" name="tokenChain" required>
+                            <option value="">-- Select Chain --</option>
+                            <option value="ether">Ethereum</option>
+                            <option value="solana">Solana</option>
+                            <option value="base">Base</option>
+                            <option value="bsc">BNB Chain</option>
+                            <option value="arbitrum">Arbitrum</option>
+                            <option value="polygon">Polygon</option>
+                            <option value="ton">TON</option>
                         </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="placement">Placement</label>
-                        <select id="placement" name="placement">
-                            <option value="">-- Select Placement --</option>
-                            <option value="top1-3">Top #1 - #3 Spot</option>
-                            <option value="top4-6">Top #4 - #6 Spot</option>
-                            <option value="top7-10">Top #7 - #10 Spot</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="price">Price</label>
-                        <input type="text" id="price" name="price" value="$0" readonly>
                     </div>
                 </div>
             </div>
         </form>
 
-        <p class="bot-description">It’s big C5 bot programmed with a new smart algorithm to keep trending stable which helps In volume boosting and LP increase.</p>
-        <button id="proceedToPaymentBtn" class="payment-button" disabled>Proceed to Payment</button>
+        <p class="bot-description">It's big C5 bot programmed with a new smart algorithm to keep trending stable which helps In volume boosting and LP increase.</p>
+        <button id="submitBtn" class="payment-button">Submit</button>
     </section>
+
+    <!-- Token Info Display Section -->
+    <div id="tokenInfoSection" class="token-info-section hidden">
+        <div class="token-info-container">
+            <div class="token-header">
+                <img id="tokenLogo" class="token-logo" alt="Token Logo">
+                <div class="token-basic-info">
+                    <h3 id="tokenName" class="token-name"></h3>
+                    <p id="tokenSymbol" class="token-symbol"></p>
+                    <p id="tokenDescription" class="token-description"></p>
+                </div>
+            </div>
+            
+            <div class="token-stats">
+                <div class="stat-item" id="holdersInfo">
+                    <span class="stat-label">Holders</span>
+                    <span class="stat-value" id="holdersValue"></span>
+                </div>
+                <div class="stat-item" id="mcapInfo">
+                    <span class="stat-label">Market Cap</span>
+                    <span class="stat-value" id="mcapValue"></span>
+                </div>
+                <div class="stat-item" id="totalSupplyInfo">
+                    <span class="stat-label">Total Supply</span>
+                    <span class="stat-value" id="totalSupplyValue"></span>
+                </div>
+                <div class="stat-item" id="fdvInfo">
+                    <span class="stat-label">FDV</span>
+                    <span class="stat-value" id="fdvValue"></span>
+                </div>
+            </div>
+
+            <div class="social-links-container" id="socialLinksContainer">
+                <div class="social-link" id="websiteLink">
+                    <a href="#" target="_blank">🌐 Website</a>
+                </div>
+                <div class="social-link" id="telegramLink">
+                    <a href="#" target="_blank">📱 Telegram</a>
+                </div>
+                <div class="social-link" id="twitterLink">
+                    <a href="#" target="_blank">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+        
+        <button id="proceedToPaymentBtn" class="payment-button">Proceed to Payment</button>
+    </div>
 
     <section class="additional-info">
         <p class="not-centered">
@@ -151,7 +176,38 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- Payment Details Popup -->
+    <!-- NEW: Duration/Placement Selection Popup (First Popup) -->
+    <div id="durationPlacementPopup" class="popup-container hidden">
+        <div class="popup-content">
+            <h2>Select Duration & Placement</h2>
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <select id="duration" name="duration">
+                    <option value="">-- Select Duration --</option>
+                    <option value="6">6 Hours Trending</option>
+                    <option value="12">12 Hours Trending</option>
+                    <option value="24">24 Hours Trending</option>
+                    <option value="48">48 Hours Trending</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="placement">Placement</label>
+                <select id="placement" name="placement">
+                    <option value="">-- Select Placement --</option>
+                    <option value="top1-3">Top #1 - #3 Spot</option>
+                    <option value="top4-6">Top #4 - #6 Spot</option>
+                    <option value="top7-10">Top #7 - #10 Spot</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" value="$0" readonly>
+            </div>
+            <button id="proceedToPaymentFromPopupBtn" class="payment-button" disabled>Proceed to Payment</button>
+        </div>
+    </div>
+
+    <!-- Payment Details Popup (Second Popup) -->
     <div id="paymentPopup" class="popup-container hidden">
         <div class="popup-content">
             <h2>Payment Details</h2>
@@ -186,7 +242,7 @@
         </div>
     </div>
 
-    <!-- Verify Payment Popup -->
+    <!-- Verify Payment Popup (Third Popup) -->
     <div id="verifyPopup" class="popup-container hidden">
         <div class="popup-content">
             <h2>Verify Payment</h2>
@@ -194,6 +250,7 @@
             <a href="https://t.me/yohan_mkt" target="_blank" class="payment-button">Verify payment via telegram</a>
         </div>
     </div>
+
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
