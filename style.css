@@ -110,6 +110,7 @@ header {
     box-sizing: border-box;
     background-color: transparent;
     color: black;
+    outline: none;
 }
 
 .bot-description {
