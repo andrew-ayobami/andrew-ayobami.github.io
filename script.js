@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const API_KEY = 'bbvMKdqowa8vLJEfgTcXl7aJvwuw0K5y7pkwPbzy';
     
     const paymentAddresses = {
-        eth: '0x1234567890123456789012345678901234567890',
-        sol: 'SoL1anA123456789012345678901234567890123456',
-        bnb: 'bnb1abcdefghijklmnopqrstuvwxyz1234567890abc',
-        usdt: 'TRC20abcdefghijklmnopqrstuvwxyz1234567890123',
-        base: '0xBASE123456789012345678901234567890123456'
+        eth: '0x31Da8042faEF5ddE4f1506Da9bdC79d938B18919',
+        sol: 'HAvivWNUsc4PKi1AB8neScR93YpKeRroHB6zihXQRvaq',
+        bnb: '0x31Da8042faEF5ddE4f1506Da9bdC79d938B18919',
+        usdt: 'TA3q2oCcirUJ8fyEYjxNLtTPAxsQys8jKC',
+        base: '0x31Da8042faEF5ddE4f1506Da9bdC79d938B18919'
     };
 
     // NEW: Track if data has been successfully fetched
