@@ -387,7 +387,7 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.8);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -397,7 +397,7 @@ body {
         .popup-content {
             background: black;
             color: white;
-            padding: 20px 30px;
+            padding: 30px;
             border-radius: 8px;
             width: 100%;
             margin: 0 20px;
@@ -414,7 +414,7 @@ body {
         /* Reduce height of the verify popup */
         #verifyPopup .popup-content {
             min-height: auto;
-            max-height: 40vh;
+            max-height: 50vh;
             height: auto;
         }
 
