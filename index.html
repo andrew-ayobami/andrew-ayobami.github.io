@@ -1,12 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Governance</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ArmsWatch — Military AI Tracker (Demo)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    thanks for being here. appreciate you like mad
-    <a href="Towards-Enforceable-Frontier-AI-Safety-Frameworks.pdf">Download Paper</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html">ArmsWatch <span class="muted">— demo</span></a>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>ArmsWatch — Military AI Tracker</h1>
+      <p class="lead">A prototype mapping notable instances of military-relevant AI procurement and deployments. <strong class="warning">DEMO DATA — not verified</strong>.</p>
+      <div class="controls">
+        <input id="searchBox" type="search" placeholder="Search incidents, countries, vendors..." />
+        <select id="countryFilter" aria-label="Filter by country">
+          <option value="">All countries</option>
+        </select>
+        <button id="sortBtn" title="Sort by year desc/asc">Sort ⤒</button>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div id="countryButtons" class="country-buttons" aria-hidden="false"></div>
+    </section>
+
+    <section id="cards" class="cards-grid" aria-live="polite">
+      <!-- cards injected here -->
+    </section>
+
+    <footer class="footer">
+      <p>Prototype • Demo data only. Replace <code>data.json</code> with verified entries. Contact: <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter</a> · <a href="https://www.linkedin.com/in/yourlink" target="_blank" rel="noopener">LinkedIn</a></p>
+    </footer>
+  </main>
+
+  <!-- Detail Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="document">
+      <button id="closeModal" class="close-btn" aria-label="Close modal">✕</button>
+      <h2 id="modalTitle"></h2>
+      <p class="meta" id="modalMeta"></p>
+      <p id="modalSummary"></p>
+      <div id="modalSources" class="sources"></div>
+      <p class="policy-note" id="modalPolicy"></p>
+      <p class="confidence" id="modalConfidence"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
