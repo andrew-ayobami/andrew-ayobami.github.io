@@ -125,159 +125,6 @@
     ]
   },
   {
-    "id":"cn-skymind-2024",
-    "project":"SkyMind",
-    "year":2024,
-    "country":"China",
-    "actors":["PLA Research Institute"],
-    "vendor_model":["Custom LLM — 'SkyMind' (internal)"],
-    "use_case":"Drone swarm coordination",
-    "status":"Prototype",
-    "confidence":"demo",
-    "tags":["autonomy","swarm","prototype"],
-    "lat":39.9042,
-    "lon":116.4074,
-    "summary":"[DEMO DATA] Prototype use of a general-purpose model to coordinate small drone swarms in exercises.",
-    "description":"Sample UI entry describing a prototype drone swarm coordination system using a foundation model. Placeholder record for testing the interface.",
-    "sources":[{"title":"Defense research bulletin (sample)","url":"#","type":"research"}]
-  },
-  {
-    "id":"ru-deepstrike-2023",
-    "project":"DeepStrike",
-    "year":2023,
-    "country":"Russia",
-    "actors":["MoD contractor"],
-    "vendor_model":["DeepStrike Targeting Suite (proprietary)"],
-    "use_case":"Precision targeting support",
-    "status":"Testing",
-    "confidence":"demo",
-    "tags":["targeting","weaponization"],
-    "lat":55.7558,
-    "lon":37.6173,
-    "summary":"[DEMO DATA] Testing of AI-assisted targeting algorithms in limited trials.",
-    "description":"Sample placement: development of a targeting assistance module using ML models. Placeholder for UI demonstration.",
-    "sources":[{"title":"Sample reportage","url":"#","type":"media"}]
-  },
-  {
-    "id":"il-ironvision-2021",
-    "project":"Iron Vision",
-    "year":2021,
-    "country":"Israel",
-    "actors":["IDF","Elbit Systems"],
-    "vendor_model":["VisionAssist v2 (custom)"],
-    "use_case":"Operator vision augmentation",
-    "status":"Deployed",
-    "confidence":"demo",
-    "tags":["vision","augmentation","deployed"],
-    "lat":31.7683,
-    "lon":35.2137,
-    "summary":"[DEMO DATA] Helmet-mounted vision AI to assist vehicle crews with threat identification.",
-    "description":"Demo entry for UI: vision augmentation system integrated in armoured vehicles.",
-    "sources":[{"title":"Company brochure (sample)","url":"#","type":"vendor"}]
-  },
-  {
-    "id":"uk-sentinel-2022",
-    "project":"Sentinel Edge",
-    "year":2022,
-    "country":"UK",
-    "actors":["UK MoD"],
-    "vendor_model":["EdgeSense (prototype)"],
-    "use_case":"Perimeter detection",
-    "status":"Active",
-    "confidence":"demo",
-    "tags":["perimeter","sensors","procurement"],
-    "lat":51.5074,
-    "lon":-0.1278,
-    "summary":"[DEMO DATA] Pilot of AI-powered perimeter defense sensors across selected bases.",
-    "description":"Demo placeholder for perimeter detection procurement pilots.",
-    "sources":[{"title":"Sample MoD release","url":"#","type":"official"}]
-  },
-  {
-    "id":"fr-cerberus-2024",
-    "project":"Cerberus Suite",
-    "year":2024,
-    "country":"France",
-    "actors":["DGA","Naval Research"],
-    "vendor_model":["Cerberus-AI (custom)"],
-    "use_case":"Maritime surveillance",
-    "status":"Prototype",
-    "confidence":"demo",
-    "tags":["maritime","surveillance"],
-    "lat":48.8566,
-    "lon":2.3522,
-    "summary":"[DEMO DATA] Prototype system for maritime domain awareness using GPAI components.",
-    "description":"Demo content for site display.",
-    "sources":[{"title":"Naval research note (sample)","url":"#","type":"research"}]
-  },
-  {
-    "id":"tr-delta-2022",
-    "project":"Delta Net",
-    "year":2022,
-    "country":"Turkey",
-    "actors":["Turkish MoD","Local vendor"],
-    "vendor_model":["Delta-Net v1"],
-    "use_case":"Logistics & ISR",
-    "status":"Active",
-    "confidence":"demo",
-    "tags":["ISR","logistics"],
-    "lat":41.0082,
-    "lon":28.9784,
-    "summary":"[DEMO DATA] Deployment of an AI-assisted ISR aggregator in select regions.",
-    "description":"Placeholder description for UI.",
-    "sources":[{"title":"Local defense press (sample)","url":"#","type":"media"}]
-  },
-  {
-    "id":"in-horizon-2024",
-    "project":"Horizon AI",
-    "year":2024,
-    "country":"India",
-    "actors":["Indian Navy","Tech contractor"],
-    "vendor_model":["HorizonNav (prototype)"],
-    "use_case":"Autonomous navigation",
-    "status":"Prototype",
-    "confidence":"demo",
-    "tags":["naval","autonomy"],
-    "lat":19.0760,
-    "lon":72.8777,
-    "summary":"[DEMO DATA] Prototype autonomous navigation system for unmanned surface vessels.",
-    "description":"Demo placeholder describing a prototype project.",
-    "sources":[{"title":"Press note (sample)","url":"#","type":"media"}]
-  },
-  {
-    "id":"ae-reefeye-2024",
-    "project":"ReefEye",
-    "year":2024,
-    "country":"UAE",
-    "actors":["UAE Armed Forces","Partner lab"],
-    "vendor_model":["ReefEye LLM (adapted)"],
-    "use_case":"Maritime surveillance & SAR",
-    "status":"Active",
-    "confidence":"demo",
-    "tags":["maritime","surveillance","SAR"],
-    "lat":25.2048,
-    "lon":55.2708,
-    "summary":"[DEMO DATA] AI platform for maritime monitoring and search & rescue support.",
-    "description":"Demo placeholder.",
-    "sources":[{"title":"Sample press (demo)","url":"#","type":"media"}]
-  },
-  {
-    "id":"tw-guardian-2023",
-    "project":"GuardianNet",
-    "year":2023,
-    "country":"Taiwan",
-    "actors":["Taiwan MoD","Local contractor"],
-    "vendor_model":["GuardianNet (custom)"],
-    "use_case":"Airspace monitoring",
-    "status":"Active",
-    "confidence":"demo",
-    "tags":["airspace","monitoring","defense"],
-    "lat":25.0330,
-    "lon":121.5654,
-    "summary":"[DEMO DATA] AI-assisted airspace monitoring and early warning prototype.",
-    "description":"Demo placeholder entry for UI testing.",
-    "sources":[{"title":"Sample defence note","url":"#","type":"official"}]
-  },
-  {
     "id":"us-project-maven-2017",
     "project": "Project Maven (Algorithmic Warfare Cross-Functional Team - AWCFT)",
     "year": "2017",
@@ -471,5 +318,398 @@
     "summary": "Pennsylvania National Guardsmen are using AI and drones to accelerate artillery missions and reduce soldier stress.",
     "description": "General mentions indicate the use of AI and drones to 'speed up artillery missions' by soldiers assigned to the Pennsylvania National Guard's 1-109th Infantry Regiment.",
     "sources": [{"title": "AI, Drones Help Pennsylvania Guard Soldiers Speed Up Artillery Missions", "url":"https://www.nationalguard.mil/News/Article-View/Article/4270027/ai-drones-help-pennsylvania-guard-soldiers-speed-up-artillery-missions/"}]
+  },
+  [
+  {
+    "id": "china-ai-001",
+    "project": "SenseTime Smart Policing Systems",
+    "year": "2017",
+    "country": "China",
+    "actors": ["SenseTime", "Chinese Police", "Leon"],
+    "vendor_model": ["SenseTotem", "SenseFace"],
+    "use_case": "Criminal capture, surveillance of ethnic minorities (Uyghurs), public safety intelligence monitoring",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["dual-use", "surveillance", "facial-recognition", "procurement", "human-rights-implications", "military-civil-fusion", "intelligent-vision"],
+    "lat": null,
+    "lon": null,
+    "summary": "SenseTime's AI-powered facial recognition systems are used by Chinese police for surveillance, including against ethnic minorities, highlighting dual-use technology for national security.",
+    "description": "SenseTime, a partially state-owned artificial intelligence company headquartered in Hong Kong, has developed and deployed 'smart policing' systems, specifically SenseTotem and SenseFace. These systems leverage advanced facial recognition and video analysis technologies, which are utilized by various Chinese police departments for purposes such as criminal apprehension through video footage. A strategic cooperation agreement was established in November 2017 between SenseTime and Leon, a significant supplier of data analysis and surveillance technology in Xinjiang. Subsequent reports, including one from The New York Times in 2019, indicated the use of SenseTime's software in facial recognition systems specifically targeting Uyghurs and other ethnic and religious minorities in Xinjiang, highlighting a clear dual-use application for internal national security and state control.",
+    "sources": [
+      {
+        "title": "SenseTime - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/SenseTime",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-002",
+    "project": "DJI Surveillance Drones",
+    "year": "2017",
+    "country": "China",
+    "actors": ["DJI", "Chinese Police", "Chinese military (implied)"],
+    "vendor_model": ["DJI drones (various models)"],
+    "use_case": "Surveillance, public safety, tactical surveillance, strike, propaganda, autonomous systems development",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["dual-use", "surveillance", "drones", "autonomous-systems", "procurement", "military-civil-fusion", "public-safety"],
+    "lat": null,
+    "lon": null,
+    "summary": "DJI drones, a commercial product, have been procured and used by Chinese police for surveillance and public safety, and designated by the US as a Chinese military company, underscoring their dual-use nature.",
+    "description": "DJI, recognized as the world's leading commercial drone manufacturer, has been implicated in China's national security apparatus through its products' dual-use capabilities. In 2017, DJI signed a strategic cooperation agreement to provide surveillance drones for use by the Chinese police in Xinjiang. Beyond internal security, these drones have been employed by Chinese police for public safety tasks, such as reminding citizens to wear masks during the Coronavirus pandemic. The military utility of DJI drones is further evidenced by their extensive use by both sides in the Russian invasion of Ukraine, where they served as effective tools for tactical surveillance, strike, and propaganda, largely due to their market dominance, affordability, high performance, and reliability.",
+    "sources": [
+      {
+        "title": "DJI - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/DJI",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-003",
+    "project": "PLA Generative AI for Military Intelligence",
+    "year": "2025",
+    "country": "China",
+    "actors": ["PLA", "Chinese defense industry", "DeepSeek", "Tsinghua University", "Zhipu AI", "Alibaba Cloud", "Meta", "OpenAI", "BigScience"],
+    "vendor_model": ["DeepSeek LLMs", "other proprietary/open-source LLMs"],
+    "use_case": "Intelligence collection/analysis, generating intelligence products, early warning, decision support, OSINT, S&T intelligence, satellite imagery processing, wargames, training",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["generative-AI", "LLM", "intelligence-analysis", "decision-support", "OSINT", "dual-use", "procurement", "military-intelligence"],
+    "lat": null,
+    "lon": null,
+    "summary": "The PLA and Chinese defense industry are rapidly adopting and procuring generative AI, including DeepSeek's LLMs, for military intelligence tasks such as OSINT, data analysis, and decision support.",
+    "description": "The People's Liberation Army (PLA) and China's defense industry have demonstrated a clear and active interest in leveraging generative AI, particularly Large Language Models (LLMs), to support military intelligence operations. They have developed methods and systems for applying generative AI to various intelligence tasks and have likely begun procuring such technologies. A Chinese defense contractor has claimed to have supplied a DeepSeek-based Open-Source Intelligence (OSINT) model to the PLA, indicating a rapid adoption of DeepSeek's generative AI models in early 2025. The PLA and its defense industry are adapting both foreign (e.g., Meta, OpenAI, BigScience) and domestic (e.g., DeepSeek, Tsinghua University, Zhipu AI, Alibaba Cloud) LLMs to create specialized models for intelligence tasks.",
+    "sources": [
+      {
+        "title": "China's PLA Leverages Generative AI for Military Intelligence: Insikt",
+        "url": "https://www.recordedfuture.com/research/artificial-eyes-generative-ai-chinas-military-intelligence",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-004",
+    "project": "PLA Intelligentization of Battlefield Decision-Making",
+    "year": "2023",
+    "country": "China",
+    "actors": ["PLA", "Central Military Commission (CMC)", "CCP"],
+    "vendor_model": ["General-purpose AI", "LLMs"],
+    "use_case": "Speeding up command decision-making, optimizing operational plans, predicting battlefield conditions, controlling/targeting firepower, achieving \"intelligentization\"",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["intelligentization", "decision-support", "command-and-control", "LLM", "strategic-planning", "military-doctrine"],
+    "lat": null,
+    "lon": null,
+    "summary": "The PLA is strategically integrating general-purpose AI, including LLMs, into battlefield decision-making processes, aiming for \"intelligentization\" through phased development from human augmentation to AI-dominated command.",
+    "description": "The concept of 'intelligentization' is central to China's military reforms and its ambition to become a 'world-class military' by 2049. The PLA views artificial intelligence as indispensable for processing the enormous and increasing amounts of data from various battlefield sensors, thereby enhancing situational awareness and dramatically accelerating commanders' decision-making. Articles published in the PLA Daily in 2023 outline a phased approach to integrating AI into military decision-making. In the initial phase, AI, including Large Language Models trained on historical war cases, will augment human decision-making by providing insights during pre-combat mission analysis. The second phase envisions AI capable of generating reconnaissance, firing, and complete operational plans based on commander guidance. The ultimate third phase anticipates AI dominating battlefield decision-making throughout the entire process, from planning to combat implementation.",
+    "sources": [
+      {
+        "title": "Is the PLA Overestimating the Potential of Artificial Intelligence?",
+        "url": "https://digitalcommons.ndu.edu/cgi/viewcontent.cgi?article=1189&context=joint-force-quarterly",
+        "type": "academic"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-005",
+    "project": "PLA Autonomous Weapon Systems & Drone Swarms",
+    "year": "2019",
+    "country": "China",
+    "actors": ["PLA", "Ziyan", "DJI"],
+    "vendor_model": ["Autonomous drones", "unspecified AI models for swarming"],
+    "use_case": "Uncrewed vehicles (air, ground, sea, subsea), swarm attacks, autonomous reconnaissance, targeting, firing, distributed ISR",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["autonomous-systems", "drones", "swarm-AI", "LAWS", "military-civil-fusion", "ISR"],
+    "lat": null,
+    "lon": null,
+    "summary": "China is rapidly advancing autonomous weapon systems, including demonstrating 1,000 synchronized drone swarms, leveraging private sector companies like Ziyan and DJI through military-civil fusion.",
+    "description": "China is aggressively developing autonomous weapon systems, particularly drones, as a core component of its 'Next Generation Artificial Intelligence Development Plan,' which aims for global AI dominance by 2030. A significant achievement demonstrating China's capability in sophisticated autonomous systems was the public demonstration of swarming technology with 1,000 synchronized drones in 2019. This development relies heavily on China's private sector, with companies like Ziyan and DJI playing pivotal roles by aligning their technological advancements with national security goals under the Military-Civil Fusion strategy. The PLA is actively pursuing greater autonomy for unmanned aerial, surface, and underwater vehicles to enable capabilities such as manned-unmanned teaming, swarm attacks, optimized logistic support, and distributed intelligence, surveillance, and reconnaissance (ISR).",
+    "sources": [
+      {
+        "title": "Cheap Drones, Expensive Lessons: Ethics, Innovation, and Regulation of Autonomous Weapon Systems",
+        "url": "https://jsis.washington.edu/news/cheap-drones-expensive-lessons-ethics-innovation-and-regulation-of-autonomous-weapon-systems/",
+        "type": "academic"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-006",
+    "project": "Huawei Indigenous AI Ecosystem Development",
+    "year": "2017",
+    "country": "China",
+    "actors": ["Huawei", "SMIC", "Tongfu Microelectronics", "Chinese government"],
+    "vendor_model": ["Huawei Ascend", "Huawei CANN", "Huawei OpenEuler"],
+    "use_case": "Strategic self-reliance in AI hardware/software, running AI computational workloads, alternative to Western tools, powering LLMs and other AI applications",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["self-reliance", "AI-chips", "software-frameworks", "military-civil-fusion", "procurement", "strategic-competition", "national-security"],
+    "lat": null,
+    "lon": null,
+    "summary": "Huawei is leading China's strategic drive for self-reliance in AI, developing indigenous general-purpose AI chips (Ascend) and software frameworks (CANN) to reduce dependence on foreign technology for national security.",
+    "description": "Huawei has emerged as a central player in China's national strategy to achieve 'self-reliance and self-strengthening' in artificial intelligence, particularly concerning indigenous AI chips and software. This drive is significantly influenced by U.S. export controls, which prompted Huawei to shift its focus to domestic manufacturing after being placed on the U.S. Department of Commerce's Entity List in 2019. Huawei collaborates closely with Semiconductor Manufacturing International Corporation (SMIC), China's most advanced logic foundry, and has developed its Ascend series of general-purpose AI chips. On the software front, Huawei is developing its own machine learning framework, CANN, as an alternative to Nvidia's CUDA, and contributes to operating systems like OpenEuler.",
+    "sources": [
+      {
+        "title": "China's drive toward self-reliance in artificial intelligence: from chips to large language models",
+        "url": "https://merics.org/en/report/chinas-drive-toward-self-reliance-artificial-intelligence-chips-large-language-models",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-007",
+    "project": "Baidu Autonomous Vehicle Development",
+    "year": "2017",
+    "country": "China",
+    "actors": ["Baidu", "Chinese State Council"],
+    "vendor_model": ["Baidu Apollo Go", "underlying general-purpose AI"],
+    "use_case": "Commercial autonomous vehicles, dual-use potential for military logistics, reconnaissance, unmanned ground vehicles",
+    "status": "Active",
+    "confidence": "high",
+    "tags": ["dual-use", "autonomous-vehicles", "national-AI-team", "military-civil-fusion", "logistics", "intelligent-transportation"],
+    "lat": null,
+    "lon": null,
+    "summary": "Baidu, designated as China's national AI team leader for autonomous vehicles, has deployed commercial robotaxi fleets, indicating dual-use AI development with potential military applications.",
+    "description": "Baidu was designated by the Chinese State Council in 2017 as the national AI team leader for the Autonomous Vehicle sector. While Baidu's most visible achievement in this area is its commercial Apollo Go robotaxi fleet, which operates in numerous Chinese cities by 2024, this designation under China's broader national AI strategy explicitly links economic development with military capabilities. This strongly implies a dual-use pathway for the underlying general-purpose AI technologies developed for autonomous driving. Advances in civilian autonomous vehicle technology can directly contribute to military applications such as unmanned ground vehicles for logistics optimization, reconnaissance, or combat support, aligning with the PLA's 'intelligentization' goals.",
+    "sources": [
+      {
+        "title": "Artificial intelligence industry in China - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_industry_in_China",
+        "type": "reference"
+      }
+    ]
+  },
+  {
+    "id": "china-ai-008",
+    "project": "Chinese Academy of Sciences (CAS) & PLA Academy of Military Sciences (AMS) Strategic Cooperation",
+    "year": "2018",
+    "country": "China",
+    "actors": ["Chinese Academy of Sciences (CAS)", "PLA Academy of Military Sciences (AMS)"],
+    "vendor_model": null,
+    "use_case": "Deep cooperation between state, military, and education sectors to implement programs designed to fill niche priority areas in defense science, including AI research and development",
+    "status": "Active",
+    "confidence": "high",
+    "tags": ["military-civil-fusion", "research", "academic-collaboration", "strategic-cooperation", "AI-research"],
+    "lat": null,
+    "lon": null,
+    "summary": "The Chinese Academy of Sciences and the PLA Academy of Military Sciences signed a strategic cooperation framework in 2018, fostering joint research and development relevant to military modernization, including AI.",
+    "description": "In 2018, the Chinese Academy of Sciences (CAS), a prominent national civilian research institution, signed a strategic cooperation framework with the PLA's Academy of Military Sciences (AMS). This collaboration is a direct manifestation of China's Military-Civil Fusion (MCF) strategy, which aims to leverage civilian research and development for military modernization. While the specific AI projects under this framework are not detailed in the available information, the broader context of China's aggressive AI development for defense strongly indicates that this cooperation would encompass AI research. The objective is to implement programs designed to fill 'niche priority areas' in defense science, implying the transfer of general-purpose AI advancements from leading academic institutions to military applications.",
+    "sources": [
+      {
+        "title": "The Rising Military Threat of China's S&T and Innovation Programs",
+        "url": "https://cdainstitute.ca/the-rising-military-threat-of-chinas-st-and-innovation-programs/",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-001",
+    "project": "AUKUS AI-enabled Uncrewed Aerial Vehicles",
+    "year": 2024,
+    "country": "UK",
+    "actors": ["AUKUS (Australia, UK, US)", "Defence Science and Technology Laboratory (Dstl)"],
+    "vendor_model": ["Unspecified AI-enabled UAVs"],
+    "use_case": "Locating, disabling, and destroying targets on the ground using AI-enabled uncrewed aerial vehicles. This represents a significant step towards autonomous targeting capabilities in a collaborative allied environment.",
+    "status": "Tested",
+    "confidence": "confirmed",
+    "tags": ["dual-use", "autonomous systems", "international collaboration", "testing"],
+    "lat": null,
+    "lon": null,
+    "summary": "AUKUS nations (Australia, UK, US) recently tested AI-enabled uncrewed aerial vehicles for ground target engagement.",
+    "description": "The AUKUS partnership, which includes Australia, the United Kingdom, and the United States, has engaged in joint testing of AI-enabled uncrewed aerial vehicles (UAVs). These tests involved human operators utilizing the AI capabilities to locate, disable, and destroy ground targets. While the precise year of this testing is not specified beyond 'recently,' the context of the source, updated in August 2024, firmly places these activities within the 2020-2025 timeframe. This collaboration underscores the UK's commitment to developing and integrating advanced autonomous systems in concert with key allies, highlighting a shared vision for future military capabilities.",
+    "sources": [
+      {
+        "title": "AI and data science: defence science and technology capability",
+        "url": "https://www.gov.uk/guidance/ai-and-data-science-defence-science-and-technology-capability",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-002",
+    "project": "Exercise Formidable Shield 2021 AI Application",
+    "year": 2021,
+    "country": "UK",
+    "actors": ["Royal Navy", "Defence Science and Technology Laboratory (Dstl)", "industry partners"],
+    "vendor_model": null,
+    "use_case": "Early detection of supersonic missile threats and rapid hazard assessment to recommend counter-threat options for naval crews. This marks the first time AI was used on-board Royal Navy ships in a NATO exercise.",
+    "status": "Tested",
+    "confidence": "confirmed",
+    "tags": ["decision support", "naval operations", "testing", "international collaboration"],
+    "lat": null,
+    "lon": null,
+    "summary": "Royal Navy ships used AI for the first time in Exercise Formidable Shield 2021 to detect missile threats and assess hazards.",
+    "description": "In 2021, during Exercise Formidable Shield, Royal Navy crews integrated AI capabilities directly into the command spaces of Type 45 destroyers and Type 23 frigates. This pioneering initiative, spearheaded by the Defence Science and Technology Laboratory (Dstl) and its industry partners, aimed to enhance the ships' capacity for early detection of supersonic missile threats. The AI-based applications were designed to provide rapid hazard assessments and recommend optimal counter-threat options to the naval crews. This successful real-world test represented the culmination of nearly a decade of dedicated research and collaborative efforts with industry suppliers, demonstrating the practical and immediate application of AI in live naval operations and decision support.",
+    "sources": [
+      {
+        "title": "AI and data science: defence science and technology capability",
+        "url": "https://www.gov.uk/guidance/ai-and-data-science-defence-science-and-technology-capability",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-003",
+    "project": "Dstl/US AFRL Joint AI Toolbox",
+    "year": 2024,
+    "country": "UK",
+    "actors": ["Defence Science and Technology Laboratory (Dstl)", "US Air Force Research Laboratory (AFRL)"],
+    "vendor_model": ["Jointly developed AI toolbox (unspecified algorithms/models)"],
+    "use_case": "Deployment of an AI toolbox onto UK-US uncrewed ground and aerial vehicles to make AI agile, adaptable, trustworthy, and accessible for warfighters in military exercises.",
+    "status": "Tested",
+    "confidence": "confirmed",
+    "tags": ["autonomous systems", "human-machine teaming", "international collaboration", "testing"],
+    "lat": null,
+    "lon": null,
+    "summary": "Dstl and US AFRL jointly developed and tested an AI toolbox for uncrewed ground and aerial vehicles in military exercises.",
+    "description": "The Defence Science and Technology Laboratory (Dstl) and the US Air Force Research Laboratory collaborated extensively on the development and deployment of a joint artificial intelligence toolbox. This toolbox was rigorously tested in two military exercises, with a core objective of ensuring AI's agility, adaptability, trustworthiness, and accessibility for warfighters across various US and UK military use cases. The trials specifically demonstrated the toolbox's successful deployment on UK-US uncrewed ground and aerial vehicles. Personnel from both nations actively participated, testing the AI's robustness and gaining a comprehensive understanding of its operational limitations.",
+    "sources": [
+      {
+        "title": "AI and data science: defence science and technology capability",
+        "url": "https://www.gov.uk/guidance/ai-and-data-science-defence-science-and-technology-capability",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-004",
+    "project": "Digital Targeting Web",
+    "year": 2025,
+    "country": "UK",
+    "actors": ["UK government", "UK Armed Forces"],
+    "vendor_model": ["New Artificial Intelligence (AI) and software (unspecified)"],
+    "use_case": "Enabling faster pinpointing and elimination of enemy targets, enhancing integration across various military domains, and improving communication among UK Armed Forces. Directly influenced by lessons from the conflict in Ukraine.",
+    "status": "Under Development",
+    "confidence": "confirmed",
+    "tags": ["targeting", "decision support", "network-centric warfare", "procurement"],
+    "lat": null,
+    "lon": null,
+    "summary": "The UK announced a £1 billion investment in the Digital Targeting Web in May 2025 to accelerate target engagement and improve domain integration.",
+    "description": "In May 2025, the UK government announced a substantial investment of over £1 billion into an innovative 'Digital Targeting Web' system designed for the Armed Forces. This system's primary objective is to enable the rapid pinpointing and elimination of enemy targets, thereby providing a decisive advantage through enhanced integration across various military domains. It is designed to incorporate new artificial intelligence and software to improve its capabilities and facilitate more effective communication among UK Armed Forces. The development of this system is directly influenced by critical lessons learned from the ongoing conflict in Ukraine, where the ability to quickly find, target, and attack the enemy at scale proved pivotal in increasing lethality and halting advances. The Strategic Defence Review (SDR) has recommended the delivery of this Digital Targeting Web by 2027.",
+    "sources": [
+      {
+        "title": "Defence technology and the new Procurement Act: what do I need to know",
+        "url": "https://www.taylorwessing.com/en/insights-and-events/insights/2025/06/public-procurement-defence-technology-and-the-new-procurement-act-what-do-i-need-to-know",
+        "type": "legal"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-005",
+    "project": "Defence Artificial Intelligence Centre (DAIC) Operations",
+    "year": 2022,
+    "country": "UK",
+    "actors": ["Defence Artificial Intelligence Centre (DAIC)", "Defence Digital", "Defence Equipment & Support", "Dstl"],
+    "vendor_model": null,
+    "use_case": "Championing, enabling, and innovating artificial intelligence across UK Defence to transform it into an 'AI-ready' organization for strategic advantage. This includes fostering collaboration with industry, academia, and allies.",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["policy", "procurement", "research & development", "organizational transformation"],
+    "lat": null,
+    "lon": null,
+    "summary": "The DAIC, established in 2021/2022, is accelerating AI adoption across UK Defence by championing, enabling, and innovating AI capabilities.",
+    "description": "The Defence Artificial Intelligence Centre (DAIC) was formally established by the Integrated Review in 2021 and commenced its operations in 2022. Its foundational vision is to position UK Defence as the world's most effective, efficient, trusted, and influential defense organization in the realm of AI. The DAIC actively champions, enables, and innovates AI across the entire spectrum of UK Defence, working in close collaboration with government entities, industry partners, academic institutions, and international allies. A core objective is to rapidly develop, deliver, and scale AI projects that generate strategic advantage, enhance military forces, and protect personnel by automating tasks that are 'dull, dirty and dangerous'. The DAIC's federated structure, supported by core teams from Defence Digital, Defence Equipment & Support, and Dstl, reflects a comprehensive organizational commitment to integrating AI.",
+    "sources": [
+      {
+        "title": "Defence Artificial Intelligence Centre - GOV.UK",
+        "url": "https://www.gov.uk/government/groups/defence-artificial-intelligence-centre",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-006",
+    "project": "Army AI Centre (AAIC) Programs (THEIA, CASTLE, Pathfinding Projects)",
+    "year": 2023,
+    "country": "UK",
+    "actors": ["British Army", "Army AI Centre (AAIC)", "Army Headquarters"],
+    "vendor_model": ["Internal Army initiatives, unspecified AI technologies"],
+    "use_case": "Providing coherence, governance, guidance, and regulation for Army AI capability, supporting data governance (Programme THEIA), AI skills development (Programme CASTLE), and high-impact research/experimentation (Pathfinding Projects).",
+    "status": "Active",
+    "confidence": "confirmed",
+    "tags": ["policy", "research & development", "data management", "workforce development"],
+    "lat": null,
+    "lon": null,
+    "summary": "The British Army established the AAIC in 2023 to operationalize AI, focusing on data, skills, and pathfinding projects.",
+    "description": "The British Army's 'Approach to Artificial Intelligence,' published in October 2023, meticulously outlines the establishment of the Army AI Centre (AAIC) within Army Headquarters. The AAIC's core mission is to provide coherence, governance, guidance, and regulation to rapidly operationalize Army AI capabilities across the entire force in an assured, safe, and responsible manner. It plays a crucial role in supporting key programs such as Programme THEIA, which focuses on data governance and cloud adoption to underpin AI development, and Programme CASTLE, which addresses AI skills development within the Army. Additionally, the AAIC oversees 'Pathfinding Projects,' a series of high-impact research and experimentation initiatives designed to build a foundational understanding of AI-related skills, technology, data, and governance through rapid delivery cycles.",
+    "sources": [
+      {
+        "title": "BRITISH ARMY'S APPROACH TO ARTIFICIAL INTELLIGENCE",
+        "url": "https://www.army.mod.uk/media/24745/20231001-british_army_approach_to_artificial_intelligence.pdf",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-007",
+    "project": "MOD AI Playbook: Autonomous Logistics",
+    "year": 2022,
+    "country": "UK",
+    "actors": ["Ministry of Defence (MOD)"],
+    "vendor_model": null,
+    "use_case": "Optimizing the cost and efficiency of logistics, stores, maintenance, and operational availability of components by identifying interchangeable components from a large database.",
+    "status": "Planned",
+    "confidence": "medium",
+    "tags": ["logistics", "efficiency", "autonomous systems"],
+    "lat": null,
+    "lon": null,
+    "summary": "The MOD aims to use AI for autonomous logistics to optimize supply chain efficiency and component management.",
+    "description": "The Defence AI Playbook, released in 2022, identifies autonomous logistics as a significant area for AI application within the Ministry of Defence. The objective is to leverage AI to substantially improve the cost-effectiveness and efficiency of logistics, stores management, maintenance operations, and the overall operational availability of components. A specific application highlighted is the use of AI to identify interchangeable components from a vast database of over 500,000 items, thereby simplifying and rationalizing the MOD's spares database.",
+    "sources": [
+      {
+        "title": "The Defence AI Playbook - GOV.UK",
+        "url": "https://assets.publishing.service.gov.uk/media/65bb75fa21f73f0014e0ba51/Defence_AI_Playbook.pdf",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-008",
+    "project": "MOD AI Playbook: Exploiting Operational Data",
+    "year": 2022,
+    "country": "UK",
+    "actors": ["Ministry of Defence (MOD)"],
+    "vendor_model": ["Unspecified AI/ML algorithms"],
+    "use_case": "Enhancing situational awareness and understanding through greater fusion and exploitation of vast amounts of operational data, providing decision advantage from back office to battlefield.",
+    "status": "Planned",
+    "confidence": "medium",
+    "tags": ["intelligence", "data exploitation", "decision support"],
+    "lat": null,
+    "lon": null,
+    "summary": "The MOD prioritizes AI-driven exploitation of operational data for enhanced situational awareness and decision advantage.",
+    "description": "The Defence AI Playbook underscores the critical importance of exploiting operational data through AI. The inherent value of AI is derived from its capacity to access and process immense quantities of data at the speed of relevance, thereby reducing the time and human interaction traditionally required to gather and process actionable information. This capability is expected to significantly enhance situational awareness and deepen understanding through more sophisticated data fusion and exploitation.",
+    "sources": [
+      {
+        "title": "The Defence AI Playbook - GOV.UK",
+        "url": "https://assets.publishing.service.gov.uk/media/65bb75fa21f73f0014e0ba51/Defence_AI_Playbook.pdf",
+        "type": "government"
+      }
+    ]
+  },
+  {
+    "id": "uk-ai-009",
+    "project": "MOD AI Playbook: Human Machine Teaming For Military Effect",
+    "year": 2022,
+    "country": "UK",
+    "actors": ["Ministry of Defence (MOD)"],
+    "vendor_model": ["Unspecified AI systems"],
+    "use_case": "Integrating humans and machines to improve military effectiveness, particularly in command and control operations and reducing cognitive load for personnel.",
+    "status": "Planned",
+    "confidence": "medium",
+    "tags": ["human-machine teaming", "decision support", "operational efficiency"],
+    "lat": null,
+    "lon": null,
+    "summary": "The MOD emphasizes human-machine teaming to enhance military effect and reduce cognitive burden through AI integration.",
+    "description": "Human-Machine Teaming (HMT) is identified in the Defence AI Playbook as a pivotal area for AI application within the Ministry of Defence. The overarching goal is to enhance the capabilities of the armed forces by seamlessly integrating AI systems with human operators. This integration is designed to improve decision-making processes and ensure the efficient allocation of resources. Specifically, AI systems are envisioned to work collaboratively with human personnel, providing crucial support and reducing cognitive load, particularly in complex analytical and operational tasks where rapid processing of information is critical.",
+    "sources": [
+      {
+        "title": "The Defence AI Playbook - GOV.UK",
+        "url": "https://assets.publishing.service.gov.uk/media/65bb75fa21f73f0014e0ba51/Defence_AI_Playbook.pdf",
+        "type": "government"
+      }
+    ]
   }
+]
 ]
