@@ -357,11 +357,15 @@ class ArmsWatch {
     
     const flagIcon = this.getCountryIcon(incident.country);
     const tags = (incident.tags || []).slice(0, 3);
+    const status = incident.status ? incident.status : '';
     
     card.innerHTML = `
       <div class="incident-header">
         <h3 class="incident-title">${this.escapeHtml(incident.project)}</h3>
-        <div class="incident-year">${incident.year}</div>
+        <div class="incident-meta">
+          <div class="incident-year">${incident.year}</div>
+          ${status ? `<div class="incident-status ${status.toLowerCase()}">${status}</div>` : ''}
+        </div>
       </div>
       <p class="incident-summary">${this.escapeHtml(incident.summary)}</p>
       <div class="incident-footer">
@@ -434,6 +438,7 @@ class ArmsWatch {
   }
 
   populateYearFilters() {
+    // Use Set to ensure unique years
     const years = [...new Set(this.dataset.map(item => item.year))].sort((a, b) => b - a);
     const countries = ['us', 'china', 'uk'];
     
@@ -445,11 +450,21 @@ class ArmsWatch {
           select.removeChild(select.lastChild);
         }
         
+        // Add each year only once
         years.forEach(year => {
-          const option = document.createElement('option');
-          option.value = year;
-          option.textContent = year;
-          select.appendChild(option);
+          // Skip if year is null or undefined
+          if (year) {
+            // Check if this year already exists in the dropdown
+            const exists = Array.from(select.options).some(option => option.value === year.toString());
+            
+            // Only add if it doesn't already exist
+            if (!exists) {
+              const option = document.createElement('option');
+              option.value = year;
+              option.textContent = year;
+              select.appendChild(option);
+            }
+          }
         });
       }
     });
