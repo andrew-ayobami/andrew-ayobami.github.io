@@ -1,66 +1,506 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ArmsWatch</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="index.html">ArmsWatch <span class="muted"></span></a>
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <span class="logo-text">ArmsWatch</span>
+        <div class="loading-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-      </nav>
     </div>
-  </header>
+  </div>
 
-  <main class="container">
-    <section class="hero">
-      <h1>ArmsWatch — Military AI Tracker</h1>
-      <p class="lead">The most militarily strong countries in the world are increasingly looking to exploit 
-        emerging AI capabilities to fortify their forces. Advanced AI poses very high risks of its own. 
-        We should be keeping track of what they're doing. You can start here! 
-      </p>
-    
-      <div class="controls">
-        <input id="searchBox" type="search" placeholder="Search incidents, countries, vendors..." />
-        <select id="countryFilter" aria-label="Filter by country">
-          <option value="">All countries</option>
-        </select>
-        <button id="sortBtn" title="Sort by year desc/asc">Sort ⤒</button>
+  <!-- Main Content -->
+  <div id="mainContent" class="main-content">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="#" class="brand-link">
+            <i class="fas fa-shield-alt brand-icon"></i>
+            <span class="brand-text">ArmsWatch</span>
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="navMenu">
+          <a href="#" class="nav-link active" data-page="overview">
+            <i class="fas fa-home"></i>
+            <span>Overview</span>
+          </a>
+          <a href="#" class="nav-link" data-page="us">
+            <i class="fas fa-flag-usa"></i>
+            <span>United States</span>
+          </a>
+          <a href="#" class="nav-link" data-page="china">
+            <i class="fas fa-flag"></i>
+            <span>China</span>
+          </a>
+          <a href="#" class="nav-link" data-page="uk">
+            <i class="fas fa-crown"></i>
+            <span>United Kingdom</span>
+          </a>
+          <a href="#" class="nav-link" data-page="about">
+            <i class="fas fa-info-circle"></i>
+            <span>About</span>
+          </a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </nav>
 
-    <section class="filters">
-      <div id="countryButtons" class="country-buttons" aria-hidden="false"></div>
-    </section>
+    <!-- Page Content Container -->
+    <main class="page-container">
+      <!-- Overview Page -->
+      <div id="overview-page" class="page active">
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fas fa-radar"></i>
+              <span>Global Military AI Tracker</span>
+            </div>
+            
+            <p class="hero-description">
+              The most militarily strong countries in the world are exploiting 
+              emerging AI capabilities to fortify their forces. 
+              Advanced AI poses very high risks of its own. We should be keeping track of what they're doing. You can start here!
+            </p>
 
-    <section id="cards" class="cards-grid" aria-live="polite">
-      <!-- cards injected here -->
-    </section>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number" id="totalIncidents">0</div>
+                <div class="stat-label">Total Incidents</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" id="totalCountries">3</div>
+                <div class="stat-label">Countries Tracked</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" id="latestYear">2024</div>
+                <div class="stat-label">Latest Update</div>
+              </div>
+            </div>
 
-    <footer class="footer">
-      <p>Prototype • Demo data only. Replace <code>data.json</code> with verified entries. Contact: <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter</a> · <a href="https://www.linkedin.com/in/yourlink" target="_blank" rel="noopener">LinkedIn</a></p>
+            <div class="hero-actions">
+              <button class="btn-primary" id="exploreBtn">
+                <i class="fas fa-rocket"></i>
+                <span>Explore Data</span>
+              </button>
+              <button class="btn-secondary" data-page="about">
+                <i class="fas fa-info-circle"></i>
+                <span>Learn More</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="globe-container">
+              <div class="globe">
+                <div class="globe-inner"></div>
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Countries Overview -->
+        <section class="countries-section">
+          <div class="container">
+            <h2 class="section-title">
+              <span class="title-accent">Countries</span> Overview
+            </h2>
+            <div class="countries-grid">
+              <div class="country-card" data-page="us">
+                <div class="country-flag">
+                  <i class="fas fa-flag-usa"></i>
+                </div>
+                <h3>United States</h3>
+                <p>Leading in military AI research and deployment across all service branches.</p>
+                <div class="country-stats">
+                  <span class="incident-count" id="usCount">0</span>
+                  <span>incidents tracked</span>
+                </div>
+                <button class="country-btn">
+                  <span>Explore</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <div class="country-card" data-page="china">
+                <div class="country-flag">
+                  <i class="fas fa-flag"></i>
+                </div>
+                <h3>China</h3>
+                <p>Rapidly advancing military AI capabilities with significant state investment.</p>
+                <div class="country-stats">
+                  <span class="incident-count" id="chinaCount">0</span>
+                  <span>incidents tracked</span>
+                </div>
+                <button class="country-btn">
+                  <span>Explore</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <div class="country-card" data-page="uk">
+                <div class="country-flag">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <h3>United Kingdom</h3>
+                <p>Strategic AI integration focused on defense innovation and partnerships.</p>
+                <div class="country-stats">
+                  <span class="incident-count" id="ukCount">0</span>
+                  <span>incidents tracked</span>
+                </div>
+                <button class="country-btn">
+                  <span>Explore</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+          <div class="container">
+            <h2 class="section-title">
+              <span class="title-accent">Recent</span> Developments
+            </h2>
+            <div class="featured-grid" id="featuredGrid">
+              <!-- Featured cards will be inserted here -->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Country Pages -->
+      <div id="us-page" class="page country-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="page-nav">
+              <button class="back-btn" data-page="overview">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Overview</span>
+              </button>
+            </div>
+            <div class="page-title-section">
+              <div class="page-flag">
+                <i class="fas fa-flag-usa"></i>
+              </div>
+              <div class="page-title-content">
+                <h1>United States</h1>
+                <p>Military AI developments and initiatives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-content">
+          <div class="container">
+            <div class="content-controls">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="usSearch" placeholder="Search US incidents...">
+              </div>
+              <div class="filter-controls">
+                <select id="usYearFilter">
+                  <option value="">All Years</option>
+                </select>
+                <button id="usSortBtn" class="sort-btn">
+                  <i class="fas fa-sort-amount-down"></i>
+                  <span>Sort by Year</span>
+                </button>
+              </div>
+            </div>
+            <div class="incidents-grid" id="usIncidents">
+              <!-- US incidents will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="china-page" class="page country-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="page-nav">
+              <button class="back-btn" data-page="overview">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Overview</span>
+              </button>
+            </div>
+            <div class="page-title-section">
+              <div class="page-flag">
+                <i class="fas fa-flag"></i>
+              </div>
+              <div class="page-title-content">
+                <h1>China</h1>
+                <p>Military AI developments and initiatives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-content">
+          <div class="container">
+            <div class="content-controls">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="chinaSearch" placeholder="Search China incidents...">
+              </div>
+              <div class="filter-controls">
+                <select id="chinaYearFilter">
+                  <option value="">All Years</option>
+                </select>
+                <button id="chinaSortBtn" class="sort-btn">
+                  <i class="fas fa-sort-amount-down"></i>
+                  <span>Sort by Year</span>
+                </button>
+              </div>
+            </div>
+            <div class="incidents-grid" id="chinaIncidents">
+              <!-- China incidents will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="uk-page" class="page country-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="page-nav">
+              <button class="back-btn" data-page="overview">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Overview</span>
+              </button>
+            </div>
+            <div class="page-title-section">
+              <div class="page-flag">
+                <i class="fas fa-crown"></i>
+              </div>
+              <div class="page-title-content">
+                <h1>United Kingdom</h1>
+                <p>Military AI developments and initiatives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-content">
+          <div class="container">
+            <div class="content-controls">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="ukSearch" placeholder="Search UK incidents...">
+              </div>
+              <div class="filter-controls">
+                <select id="ukYearFilter">
+                  <option value="">All Years</option>
+                </select>
+                <button id="ukSortBtn" class="sort-btn">
+                  <i class="fas fa-sort-amount-down"></i>
+                  <span>Sort by Year</span>
+                </button>
+              </div>
+            </div>
+            <div class="incidents-grid" id="ukIncidents">
+              <!-- UK incidents will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Page -->
+      <div id="about-page" class="page about-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="page-nav">
+              <button class="back-btn" data-page="overview">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Overview</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <div class="container">
+            <div class="about-hero">
+              <h1>About ArmsWatch</h1>
+            </div>
+
+            <div class="about-content-text">
+              <p class="about-para">
+                ArmsWatch is an ongoing effort to track notable developments in military applications of artificial intelligence, 
+                as rising AI capabilities become more evident and alluring to state actors. This is an OSINT-level resource. So, some 
+                reports are ambiguous or speculative and are labeled accordingly. Each entry includes a confidence level and source links.
+              </p>
+              
+              <p class="about-para">
+                Over time, I intend to cover as many countries as are relevant to the topic. The current scope tracks 
+                the United States, China, and the United Kingdom, but this is merely because this is a work in progress. 
+                I also intend to cover the policy and risk implications of what these countries are doing.
+              </p>
+              
+              <p class="about-para">
+                I'm hosting this publicly so early in the hope that anyone interested in military applications 
+                of AI or worried about the <a class="about-link" href="https://substack.com/home/post/p-165988199">
+              growing bromance between governments and AI corps</a> can see the direction and decide to contribute. If this is you, please reach out.
+              </p>
+            </div>
+
+            <div class="contribution-section">
+              <h2>How to Contribute</h2>
+              <div class="contribution-grid">
+                <div class="contribution-item">
+                  <i class="fab fa-github"></i>
+                  <h4>GitHub</h4>
+                  <p>Open a pull request or issue</p>
+                  <a href="https://github.com/andrew-ayobami/andrew-ayobami.github.io.git" target="_blank" class="contrib-link">
+                    <span>Contribute</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div class="contribution-item">
+                  <i class="fab fa-twitter"></i>
+                  <h4>Twitter</h4>
+                  <p>Send suggestions or feedback</p>
+                  <a href="https://x.com/damilxre" target="_blank" class="contrib-link">
+                    <span>@damilxre</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div class="contribution-item">
+                  <i class="fab fa-linkedin"></i>
+                  <h4>LinkedIn</h4>
+                  <p>Connect with me</p>
+                  <a href="https://www.linkedin.com/in/andrew-ayobami-2326b7199/" target="_blank" class="contrib-link">
+                    <span>Connect</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div class="contribution-item">
+                  <i class="fas fa-envelope"></i>
+                  <h4>Email</h4>
+                  <p>Send a mail</p>
+                  <a href="mailto:ayobamiandrew00@gmail.com" class="contrib-link">
+                    <span>Send Email</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Enhanced Modal -->
+    <div id="incidentModal" class="incident-modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <button class="modal-close" id="modalClose" aria-label="Close modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-content" id="modalContent">
+          <div class="modal-body">
+            <div class="incident-header">
+              <div class="incident-flag" id="modalFlag">
+                <i class="fas fa-flag"></i>
+              </div>
+              <div class="incident-title-section">
+                <h2 id="modalTitle">Project Title</h2>
+                <div class="incident-meta" id="modalMeta">
+                  <span class="meta-item" id="modalCountry">Country</span>
+                  <span class="meta-divider">•</span>
+                  <span class="meta-item" id="modalYear">2024</span>
+                  <span class="meta-divider">•</span>
+                  <span class="meta-item" id="modalUseCase">Use Case</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="incident-summary" id="modalSummary">
+              Summary content will be loaded here...
+            </div>
+
+            <div class="incident-description" id="modalDescription">
+              Detailed description will be loaded here...
+            </div>
+
+            <div class="incident-actors" id="modalActors">
+              <h4>Key Actors</h4>
+              <div class="actors-list" id="actorsList">
+                <!-- Actors will be populated here -->
+              </div>
+            </div>
+
+            <div class="incident-tags" id="modalTags">
+              <h4>Tags</h4>
+              <div class="tags-list" id="tagsList">
+                <!-- Tags will be populated here -->
+              </div>
+            </div>
+
+            <div class="incident-sources" id="modalSources">
+              <h4>Sources</h4>
+              <div class="sources-list" id="sourcesList">
+                <!-- Sources will be populated here -->
+              </div>
+            </div>
+
+            <div class="incident-confidence" id="modalConfidenceSection">
+              <span class="confidence-label">Confidence:</span>
+              <span class="confidence-value" id="modalConfidence">High</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Footer -->
+    <footer class="fixed-footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://x.com/damilxre" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:ayobamiandrew00@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/andrew-ayobami-2326b7199/" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/andrew-ayobami/andrew-ayobami.github.io.git" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
     </footer>
-  </main>
-
-  <!-- Detail Modal -->
-  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-panel" role="document">
-      <button id="closeModal" class="close-btn" aria-label="Close modal">✕</button>
-      <h2 id="modalTitle"></h2>
-      <p class="meta" id="modalMeta"></p>
-      <p id="modalSummary"></p>
-      <div id="modalSources" class="sources"></div>
-      <p class="policy-note" id="modalPolicy"></p>
-      <p class="confidence" id="modalConfidence"></p>
-    </div>
   </div>
 
   <script src="script.js"></script>

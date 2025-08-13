@@ -154,7 +154,7 @@
     "lat_lon": null,
     "summary": "JADC2 is a cross-service initiative leveraging AI to integrate military communication networks for global data movement and enhanced decision-making.",
     "description": "Joint All-Domain Command and Control (JADC2) is an ambitious initiative aiming to integrate the communication networks of all US Armed Forces branches (Army, Air Force, Navy, Marines, and Coast Guard) into a larger, all-spatial-scale network, with the tagline 'Connect every sensor, every shooter,' enabling global data movement. AI is critical to process the massive data flows and provide real-time decision support within this integrated network. By February 2024, the DoD announced it had achieved a 'minimum viable capability' in JADC2.",
-    "sources": [{"title": "find", "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office"}]
+    "sources": [{"title": "Chief Digital and Artificial Intelligence Office", "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office"}]
   },
   {
     "id":"us-jcf-2025",
@@ -319,7 +319,6 @@
     "description": "General mentions indicate the use of AI and drones to 'speed up artillery missions' by soldiers assigned to the Pennsylvania National Guard's 1-109th Infantry Regiment.",
     "sources": [{"title": "AI, Drones Help Pennsylvania Guard Soldiers Speed Up Artillery Missions", "url":"https://www.nationalguard.mil/News/Article-View/Article/4270027/ai-drones-help-pennsylvania-guard-soldiers-speed-up-artillery-missions/"}]
   },
-  [
   {
     "id": "china-ai-001",
     "project": "SenseTime Smart Policing Systems",
@@ -346,7 +345,7 @@
   {
     "id": "china-ai-002",
     "project": "DJI Surveillance Drones",
-    "year": "2017",
+    "year": 2017,
     "country": "China",
     "actors": ["DJI", "Chinese Police", "Chinese military (implied)"],
     "vendor_model": ["DJI drones (various models)"],
@@ -369,7 +368,7 @@
   {
     "id": "china-ai-003",
     "project": "PLA Generative AI for Military Intelligence",
-    "year": "2025",
+    "year": 2025,
     "country": "China",
     "actors": ["PLA", "Chinese defense industry", "DeepSeek", "Tsinghua University", "Zhipu AI", "Alibaba Cloud", "Meta", "OpenAI", "BigScience"],
     "vendor_model": ["DeepSeek LLMs", "other proprietary/open-source LLMs"],
@@ -391,8 +390,8 @@
   },
   {
     "id": "china-ai-004",
-    "project": "PLA Intelligentization of Battlefield Decision-Making",
-    "year": "2023",
+    "project": "PLA \"Intelligentization\" of Battlefield Decision-Making",
+    "year": 2023,
     "country": "China",
     "actors": ["PLA", "Central Military Commission (CMC)", "CCP"],
     "vendor_model": ["General-purpose AI", "LLMs"],
@@ -415,7 +414,7 @@
   {
     "id": "china-ai-005",
     "project": "PLA Autonomous Weapon Systems & Drone Swarms",
-    "year": "2019",
+    "year": 2019,
     "country": "China",
     "actors": ["PLA", "Ziyan", "DJI"],
     "vendor_model": ["Autonomous drones", "unspecified AI models for swarming"],
@@ -438,7 +437,7 @@
   {
     "id": "china-ai-006",
     "project": "Huawei Indigenous AI Ecosystem Development",
-    "year": "2017",
+    "year": 2017,
     "country": "China",
     "actors": ["Huawei", "SMIC", "Tongfu Microelectronics", "Chinese government"],
     "vendor_model": ["Huawei Ascend", "Huawei CANN", "Huawei OpenEuler"],
@@ -461,7 +460,7 @@
   {
     "id": "china-ai-007",
     "project": "Baidu Autonomous Vehicle Development",
-    "year": "2017",
+    "year": 2017,
     "country": "China",
     "actors": ["Baidu", "Chinese State Council"],
     "vendor_model": ["Baidu Apollo Go", "underlying general-purpose AI"],
@@ -484,7 +483,7 @@
   {
     "id": "china-ai-008",
     "project": "Chinese Academy of Sciences (CAS) & PLA Academy of Military Sciences (AMS) Strategic Cooperation",
-    "year": "2018",
+    "year": 2018,
     "country": "China",
     "actors": ["Chinese Academy of Sciences (CAS)", "PLA Academy of Military Sciences (AMS)"],
     "vendor_model": null,
@@ -711,5 +710,4 @@
       }
     ]
   }
-]
 ]
