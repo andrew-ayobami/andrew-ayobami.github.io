@@ -131,14 +131,20 @@
     "country": "US",
     "actors": ["US Department of Defense (DoD)", "US Special Operations Command (USSOCOM)", "US Army (160th Special Operations Aviation Regiment)", "Joint Artificial Intelligence Center (JAIC)", "Defense Innovation Unit-Experimental", "Strategic Capabilities Office", "Army Research Laboratory"],
     "vendor_model": "Various computer vision algorithms, AI/ML models for predictive maintenance; Google (initial involvement)",
-    "use_case": "Automated Processing, Exploitation, and Dissemination (PED) of full-motion video (FMV) for intelligence, surveillance, and reconnaissance (ISR) assets, using computer vision for object detection, classification, and alerts. Expanded scope includes predictive maintenance for aircraft, cybersecurity, and monitoring special operators' brain health.",
+    "use_case": "Automated video analysis and predictive maintenance",
     "status": "Active",
     "confidence": "High",
     "tags": ["intelligence", "computer vision", "predictive maintenance", "logistics", "dual-use", "AI/ML", "data processing", "national mission initiative"],
     "lat_lon": null,
     "summary": "Project Maven is a foundational DoD effort that leverages general-purpose AI/ML, primarily computer vision, to automate intelligence analysis from full-motion video and has expanded to include predictive maintenance and other operational support functions.",
     "description": "Launched in April 2017, Project Maven was a foundational DoD effort to accelerate the integration of big data, AI, and machine learning into its programs. Its initial objective was to automate the processing, exploitation, and dissemination (PED) of full-motion video (FMV) collected by intelligence, surveillance, and reconnaissance (ISR) assets, primarily using computer vision algorithms for object detection, classification, and alerts. This involved bringing industry-best software in AI and computer vision to FMV, fielding it to warfighters, gathering feedback, and rapidly upgrading the tools' performance. While initially focused on FMV analysis for counterinsurgency and counterterrorism operations, its scope quickly expanded to include broader applications such as predictive maintenance for aircraft (e.g., for the Army's 160th Special Operations Aviation Regiment), cybersecurity, and even monitoring special operators' brain health. The project faced early challenges, including data fragmentation and issues with algorithm accuracy (around 50% for geo-referencing), which led to the adoption of a 'field to learn' approach and the development of new human-machine interfaces to improve utility. By Spring 2018, significant progress was reported, with AI acting as a 'combat multiplier' by freeing human analysts to focus on more complex tasks. Project Maven was explicitly identified as a key 'National Mission Initiative' for the newly established Joint Artificial Intelligence Center (JAIC).",
-    "sources": [{"title":"Big Data at War: Special Operations Forces, Project Maven, and Twenty-First-Century Warfare","url":"https://mwi.westpoint.edu/big-data-at-war-special-operations-forces-project-maven-and-twenty-first-century-warfare/","type":"official"}]
+    "sources": [
+      {
+       "title": "Big Data at War: Special Operations Forces, Project Maven, and Twenty-First-Century Warfare", 
+       "url": "https://mwi.westpoint.edu/big-data-at-war-special-operations-forces-project-maven-and-twenty-first-century-warfare/", 
+       "type": "article"
+      }
+    ]
   },
   {
     "id":"us-jadc2-2018",
@@ -147,14 +153,20 @@
     "country": "US",
     "actors": ["Joint Artificial Intelligence Center (JAIC)", "Chief Digital and AI Office (CDAO)", "US Armed Forces (Army, Air Force, Navy, Marines, Coast Guard)", "Gen. Chance Saltzman (US Space Force)"],
     "vendor_model": "AI-enabled command and control systems, data integration platforms",
-    "use_case": "Integrating communication networks of all US Armed Forces branches into a larger, all-spatial-scale network ('Connect every sensor, every shooter') to enable global data movement and real-time decision support.",
+    "use_case": "Integrated military network communication and decision support",
     "status": "Active",
     "confidence": "High",
     "tags": ["command and control", "data integration", "network of networks", "decision support", "AI-enhanced communication", "strategic"],
     "lat_lon": null,
     "summary": "JADC2 is a cross-service initiative leveraging AI to integrate military communication networks for global data movement and enhanced decision-making.",
     "description": "Joint All-Domain Command and Control (JADC2) is an ambitious initiative aiming to integrate the communication networks of all US Armed Forces branches (Army, Air Force, Navy, Marines, and Coast Guard) into a larger, all-spatial-scale network, with the tagline 'Connect every sensor, every shooter,' enabling global data movement. AI is critical to process the massive data flows and provide real-time decision support within this integrated network. By February 2024, the DoD announced it had achieved a 'minimum viable capability' in JADC2.",
-    "sources": [{"title": "Chief Digital and Artificial Intelligence Office", "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office"}]
+    "sources": [
+      {
+        "title": "Chief Digital and Artificial Intelligence Office", 
+        "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office",
+        "type": "reference"
+      }
+    ]
   },
   {
     "id":"us-jcf-2025",
@@ -163,14 +175,20 @@
     "country": "US",
     "actors": ["Department of Defense (DoD)", "Joint Artificial Intelligence Center (JAIC)", "Chief Digital and AI Office (CDAO)"],
     "vendor_model": "Cloud-based AI development and experimentation platform",
-    "use_case": "Providing a cloud-based platform for AI development, experimentation, and deployment across the entire DoD.",
+    "use_case": "Cloud-based AI development and deployment platform across the DoD",
     "status": "Active",
     "confidence": "High",
     "tags": ["AI development", "cloud platform", "experimentation", "infrastructure", "data fabric"],
     "lat_lon": null,
     "summary": "The JCF is the DoD's cloud-based platform for developing and experimenting with AI solutions across the department.",
     "description": "The Joint Common Foundation (JCF) is explicitly described as 'The DoD's Cloud-Based AI Development and Experimentation Platform'. JCF represents a critical piece of general-purpose AI infrastructure, providing a shared, scalable environment for developing, testing, and deploying AI solutions across the entire Department of Defense.",
-    "sources": [{"title": "Chief Digital and Artificial Intelligence Office", "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office"}]
+    "sources": [
+      {
+        "title": "Chief Digital and Artificial Intelligence Office", 
+        "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office",
+        "type": "reference"
+      }
+    ]
   },
   {
     "id":"us-neuromorphic-2021",
@@ -179,14 +197,20 @@
     "country": "US",
     "actors": ["Joint Artificial Intelligence Center (JAIC)", "US commercial sector", "academia"],
     "vendor_model": "Neuromorphic processors, neural network computation capabilities for edge devices",
-    "use_case": "Performing neural network computations directly on sensors in weapon systems and military vehicles (edge computing) to increase combat network robustness by reducing the need for central data processing.",
+    "use_case": "Edge computing for sensor-based neural networks",
     "status": "Active",
     "confidence": "High",
     "tags": ["edge computing", "neuromorphic AI", "sensor processing", "combat network", "autonomy"],
     "lat_lon": null,
     "summary": "JAIC is exploring neuromorphic computing for edge AI to enable on-sensor processing and enhance combat network robustness.",
     "description": "JAIC expressed primary interest in edge computing, particularly leveraging neuromorphic processors to perform neural network computations directly on sensors. This approach aims to increase the robustness of combat networks by reducing the need to send data to a central processor, thus enabling faster, more resilient AI operations at the tactical edge.",
-    "sources": [{"title": "Chief Digital and Artificial Intelligence Office", "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office"}]
+    "sources": [
+      {
+        "title": "Chief Digital and Artificial Intelligence Office", 
+        "url":"https://en.wikipedia.org/wiki/Chief_Digital_and_Artificial_Intelligence_Office",
+        "type": "reference"
+      }
+    ]
   },
   {
     "id":"us-openai-llc-2025",
@@ -195,14 +219,20 @@
     "country": "US",
     "actors": ["US Department of Defense (Pentagon)", "OpenAI Public Sector LLC"],
     "vendor_model": "OpenAI frontier AI capabilities, foundation models (GPT-4 derivatives)",
-    "use_case": "Designing military AI prototypes to meet critical national security needs for combat operations and Pentagon internal management systems. Includes multisource data mining in conflict zones (satellite imagery, sensors, drones), decision support in tactical contexts, prediction of adversarial behavior via algorithmic simulation, and automated logistics optimization in contested environments.",
+    "use_case": "Combat AI prototypes for operations and logistics",
     "status": "Active",
     "confidence": "High",
     "tags": ["procurement", "frontier AI", "foundation models", "LLM", "combat operations", "logistics", "decision support", "dual-use"],
     "lat_lon": null,
     "summary": "OpenAI Public Sector LLC received a $200M contract from the Pentagon to develop frontier AI prototypes for combat and internal management, focusing on data mining, decision support, and logistics.",
     "description": "In a landmark development, OpenAI Public Sector LLC was awarded a $200 million contract by the US Department of Defense (Pentagon) to design military artificial intelligence prototypes. This project, set to run until July 2026, aims to meet critical national security needs for both combat operations and the Pentagon's internal management systems. The partnership specifically leverages 'frontier AI' and 'foundation models' (likely derived from OpenAI's GPT-4 and its specialized derivatives) for advanced capabilities such as multisource data mining in conflict zones, decision support in tactical contexts, prediction of adversarial behavior via algorithmic simulation, and automated logistics optimization in contested environments.",
-    "sources": [{"title": "Military artificial intelligence: OpenAI wins €200 million contract from the Pentagon", "url":"https://www.flyajetfighter.com/military-artificial-intelligence-openai-wins-e200-million-contract-from-the-pentagon/"}]
+    "sources": [
+      {
+        "title": "Military artificial intelligence: OpenAI wins €200 million contract from the Pentagon", 
+        "url": "https://www.flyajetfighter.com/military-artificial-intelligence-openai-wins-e200-million-contract-from-the-pentagon/",
+        "type": "news"
+      }
+    ]
   },
   {
     "id":"us-cdao-2018",
@@ -211,15 +241,20 @@
     "country": "US",
     "actors": ["Pentagon's Chief Digital and AI Office (CDAO)", "Google", "xAI", "Anthropic", "OpenAI"],
     "vendor_model": "Google AI, xAI Grok for Government, Anthropic Claude, OpenAI GPT models",
-    "use_case": "Developing agentic AI workflows for key national security missions, including intelligence analysis, campaigning, logistics, and data collection. Builds upon existing uses of generative AI tools for tasks like tech support and finding files.",
+    "use_case": "Agentic AI for intelligence and national security",
     "status": "Active",
     "confidence": "High",
     "tags": ["procurement", "agentic AI", "generative AI", "intelligence analysis", "logistics", "data collection", "national security", "dual-use"],
     "lat_lon": null,
     "summary": "The CDAO awarded up to $200M each to Google, xAI, Anthropic, and OpenAI to develop advanced agentic AI for national security missions like intelligence, logistics, and data collection.",
     "description": "On July 15, 2025, the Pentagon's Chief Digital and AI Office (CDAO) announced that it had chosen Google, xAI, Anthropic, and OpenAI to help the US military expand its use of 'advanced artificial intelligence capabilities'. Each company received a contract worth up to $200 million. These firms are tasked with developing 'agentic AI workflows' for key national security missions. While the Pentagon did not specify all missions, the department has indicated interest in areas like intelligence analysis, campaigning, logistics, and data collection, building upon existing uses of generative AI tools for tasks such as tech support and finding files. Notably, Elon Musk-owned xAI unveiled its 'Grok for Government' production line following this announcement.", 
-    "sources": [{"title": "Pentagon taps four commercial tech firms to expand military use of AI", "url":"https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/"}]
-    
+    "sources": [
+      {
+        "title": "Pentagon taps four commercial tech firms to expand military use of AI", 
+        "url":"https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/",
+        "type": "news"  
+      }
+    ]
   },
   {
     "id":"us-udl-2018",
@@ -228,14 +263,20 @@
     "country": "US",
     "actors": ["US Space Force", "Air Force Research Laboratory (AFRL)", "National Space Intelligence Center", "Space Operations Squadrons (SOPS)"],
     "vendor_model": "Cloud-based data repository",
-    "use_case": "Ingesting and consolidating data from government and commercial sensors to support space domain awareness missions. Facilitates data sharing across the Space Force enterprise (tactical, operational, strategic levels) and with Combatant Commands, commercial entities, and partner nations.",
+    "use_case": "Space domain awareness data consolidation platform",
     "status": "Active",
     "confidence": "High",
     "tags": ["data repository", "cloud", "space domain awareness", "data sharing", "infrastructure", "AI-enabled"],
     "lat_lon": null,
     "summary": "The UDL is a cloud-based data repository, launched in 2018, that consolidates sensor data for Space Force domain awareness and facilitates AI-driven analysis.",
     "description": "A key component of the Space Force's strategy, the UDL is a cloud-based data repository launched in 2018 by the Air Force Research Laboratory (AFRL). It is designed to ingest and consolidate data from both government and commercial sensors to support space domain awareness missions. Following a 2023 Government Accountability Office (GAO) report that highlighted challenges, the UDL transitioned from a prototype to an official Program of Record on November 13, 2024, with ongoing efforts to identify and expose more sensor data for analysis by the National Space Intelligence Center and integrate it into Space Operations Squadrons.",
-    "sources": [{"title": "New Space Force plan charts path for enhanced Unified Data Library", "url":"https://defensescoop.com/2025/03/19/space-force-data-artificial-intelligence-strategic-action-plan-udl/"}]
+    "sources": [
+      {
+        "title": "New Space Force plan charts path for enhanced Unified Data Library", 
+        "url": "https://defensescoop.com/2025/03/19/space-force-data-artificial-intelligence-strategic-action-plan-udl/",
+        "type": "news"      
+      }
+    ]
   },
   {
     "id":"us-act3-2021",
@@ -244,14 +285,20 @@
     "country": "US",
     "actors": ["Air Force Research Laboratory (AFRL)", "Air Force", "Space Force", "academic and commercial AI researchers"],
     "vendor_model": "Internal AFRL expertise, collaborations with academic and commercial AI researchers",
-    "use_case": "Operationalizing AI at scale for the Air Force and Space Force. Focuses on human-autonomy teams (HATs), safe autonomy, reinforcement training for AI-based tactical autopilots, and neuroscience-informed AI.",
+    "use_case": "AI operationalization for Air and Space Forces",
     "status": "Active",
     "confidence": "High",
     "tags": ["autonomy", "AI operationalization", "human-machine teaming", "safe AI", "research", "development"],
     "lat_lon": null,
     "summary": "ACT3 is an AFRL AI special operations organization tasked with operationalizing AI at scale for the Air and Space Forces, focusing on human-autonomy teams and safe AI.",
     "description": "The Air Force Research Laboratory's (AFRL) Autonomy Capability Team (ACT3) is an 'AI Special Operations organization' specifically tasked with operationalizing AI at scale for both the Air Force and the Space Force. It employs an innovative 'start-up' business model, integrating AFRL's internal expertise with collaborations from leading academic and commercial AI researchers worldwide.",
-    "sources": [{"title": "Air and Space Force Cognitive Engine (ASCE)", "url":"https://www.afrl.af.mil/ACT3/"}]
+    "sources": [
+      {
+        "title": "Air and Space Force Cognitive Engine (ASCE)", 
+        "url":"https://www.afrl.af.mil/ACT3/",
+        "type": "government"
+      }
+    ]
   },
   {
     "id":"us-asce-2021",
@@ -260,14 +307,20 @@
     "country": "US",
     "actors": ["AFRL's Autonomy Capability Team (ACT3)", "Airmen"],
     "vendor_model": "Software suite for AI development on Kubernetes clusters",
-    "use_case": "Enables users (Airmen) to develop complex AI solutions at any scale. Applicable to diverse requirements including business processes (civilian hiring, contract monitoring), predictive maintenance, automated air combat operations, aircraft damage inspection, humanitarian assistance, disaster relief, additive manufacturing, and intelligence, surveillance, and reconnaissance (ISR) missions.",
+    "use_case": "AI development software for diverse military applications",
     "status": "Active",
     "confidence": "High",
     "tags": ["AI development platform", "software", "Kubernetes", "predictive maintenance", "logistics", "ISR", "automated operations", "dual-use"],
     "lat_lon": null,
     "summary": "ASCE is an AFRL-developed, license-free software suite enabling Airmen to develop and deploy complex AI solutions for a wide range of operational and business needs.",
     "description": "Developed by ACT3, ASCE is described as a 'one-stop, all-inclusive, license-free suite of closely integrated software and services that enable users to develop complex AI solutions at any scale' on top of any Kubernetes cluster. Its vision is to make AI a 'do-it-yourself tool for every Airman,' applicable to a remarkably diverse range of requirements, including business processes (e.g., civilian hiring, contract monitoring), predictive maintenance, automated air combat operations, aircraft damage inspection, humanitarian assistance, disaster relief, additive manufacturing, and intelligence, surveillance, and reconnaissance (ISR) missions.",
-    "sources": [{"title": "Air and Space Force Cognitive Engine (ASCE)", "url":"https://www.afrl.af.mil/ACT3/"}]
+    "sources": [
+      {
+        "title": "Air and Space Force Cognitive Engine (ASCE)", 
+        "url":"https://www.afrl.af.mil/ACT3/",
+        "type": "government"
+      }
+    ]
   },
   {
     "id":"us-raite-2023",
@@ -276,14 +329,20 @@
     "country": "US",
     "actors": ["Naval Surface Warfare Center (NSWC) Crane Division", "academia", "industry", "government"],
     "vendor_model": "Various AI efforts and prototypes",
-    "use_case": "Testing AI efforts in real-world, unclassified scenarios, facilitating collaboration among academia, industry, and government.",
+    "use_case": "Real-world AI testing and collaboration events",
     "status": "Active",
     "confidence": "High",
     "tags": ["AI testing", "collaboration", "real-world scenarios", "R&D"],
     "lat_lon": "39.2833, -86.0333",
     "summary": "NSWC Crane hosts RAITE, an annual event at Muscatatuck Training Center, to test AI in real-world scenarios and foster collaboration.",
     "description": "NSWC Crane hosted the first RAITE at Muscatatuck Training Center from September 25-28, 2023, with a second annual event in October 2024. These events facilitate collaboration among academia, industry, and government, allowing for the testing of AI efforts in real-world, unclassified scenarios.",
-    "sources": [{"title": "NSWC Crane hosts first Robust Artificial Intelligence Test Event at Muscatatuck Training Center", "url":"https://www.navsea.navy.mil/Media/News/Article-View/Article/3597393/nswc-crane-hosts-first-robust-artificial-intelligence-test-event-at-muscatatuck/"}]
+    "sources": [
+      {
+        "title": "NSWC Crane hosts first Robust Artificial Intelligence Test Event at Muscatatuck Training Center", 
+        "url":"https://www.navsea.navy.mil/Media/News/Article-View/Article/3597393/nswc-crane-hosts-first-robust-artificial-intelligence-test-event-at-muscatatuck/",
+        "type": "government"
+      }
+    ]
   },
   {
     "id":"us-pma-2018",
@@ -292,7 +351,7 @@
     "country": "US",
     "actors": ["US Army (160th Special Operations Aviation Regiment)", "US Special Operations Command (USSOCOM)", "Joint Artificial Intelligence Center (JAIC)"],
     "vendor_model": "Predictive maintenance algorithms",
-    "use_case": "Applying AI algorithms to select aircraft systems to predict maintenance needs, leading to increased efficiency and cost savings.",
+    "use_case": "AI-powered aircraft maintenance prediction system",
     "status": "Active",
     "confidence": "High",
     "tags": ["predictive maintenance", "logistics", "readiness", "AI/ML", "aviation"],
@@ -300,8 +359,12 @@
     "summary": "The Army's 160th SOAR, in partnership with JAIC, used Project Maven's predictive maintenance AI for aircraft, yielding significant efficiency gains.",
     "description": "The 160th Special Operations Aviation Regiment (Army) applied predictive maintenance algorithms through Project Maven with 'powerful results', demonstrating a practical application of AI for logistics and readiness.",
     "sources": [
-      {"title": "Big Data at War: Special Operations Forces, Project Maven, and Twenty-First-Century Warfare", 
-    "url":"https://mwi.westpoint.edu/big-data-at-war-special-operations-forces-project-maven-and-twenty-first-century-warfare/"}]
+      {
+       "title": "Big Data at War: Special Operations Forces, Project Maven, and Twenty-First-Century Warfare", 
+       "url": "https://mwi.westpoint.edu/big-data-at-war-special-operations-forces-project-maven-and-twenty-first-century-warfare/", 
+       "type": "article"
+      }
+    ]
   },
   {
     "id":"us-adam-2025",
@@ -310,14 +373,20 @@
     "country": "US",
     "actors": ["Pennsylvania National Guard's 1-109th Infantry Regiment"],
     "vendor_model": "AI and unmanned aerial system technology",
-    "use_case": "Speeding up artillery missions and making calling for artillery fire less stressful for soldiers on the battlefield.",
+    "use_case": "Artillery acceleration using AI and drone technology.",
     "status": "Active",
     "confidence": "Medium",
     "tags": ["artillery", "drones", "battlefield operations", "decision support", "AI-enabled"],
     "lat_lon": null,
     "summary": "Pennsylvania National Guardsmen are using AI and drones to accelerate artillery missions and reduce soldier stress.",
     "description": "General mentions indicate the use of AI and drones to 'speed up artillery missions' by soldiers assigned to the Pennsylvania National Guard's 1-109th Infantry Regiment.",
-    "sources": [{"title": "AI, Drones Help Pennsylvania Guard Soldiers Speed Up Artillery Missions", "url":"https://www.nationalguard.mil/News/Article-View/Article/4270027/ai-drones-help-pennsylvania-guard-soldiers-speed-up-artillery-missions/"}]
+    "sources": [
+      {
+        "title": "AI, Drones Help Pennsylvania Guard Soldiers Speed Up Artillery Missions", 
+        "url": "https://www.nationalguard.mil/News/Article-View/Article/4270027/ai-drones-help-pennsylvania-guard-soldiers-speed-up-artillery-missions/",
+        "type": "news"
+      }
+    ]
   },
   {
     "id": "china-ai-001",
@@ -326,7 +395,7 @@
     "country": "China",
     "actors": ["SenseTime", "Chinese Police", "Leon"],
     "vendor_model": ["SenseTotem", "SenseFace"],
-    "use_case": "Criminal capture, surveillance of ethnic minorities (Uyghurs), public safety intelligence monitoring",
+    "use_case": "Criminal capture, surveillance of Uyghurs, public monitoring",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["dual-use", "surveillance", "facial-recognition", "procurement", "human-rights-implications", "military-civil-fusion", "intelligent-vision"],
@@ -349,7 +418,7 @@
     "country": "China",
     "actors": ["DJI", "Chinese Police", "Chinese military (implied)"],
     "vendor_model": ["DJI drones (various models)"],
-    "use_case": "Surveillance, public safety, tactical surveillance, strike, propaganda, autonomous systems development",
+    "use_case": "Dual-use drones for surveillance and public safety operations",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["dual-use", "surveillance", "drones", "autonomous-systems", "procurement", "military-civil-fusion", "public-safety"],
@@ -372,7 +441,7 @@
     "country": "China",
     "actors": ["PLA", "Chinese defense industry", "DeepSeek", "Tsinghua University", "Zhipu AI", "Alibaba Cloud", "Meta", "OpenAI", "BigScience"],
     "vendor_model": ["DeepSeek LLMs", "other proprietary/open-source LLMs"],
-    "use_case": "Intelligence collection/analysis, generating intelligence products, early warning, decision support, OSINT, S&T intelligence, satellite imagery processing, wargames, training",
+    "use_case": "LLMs for intelligence analysis and decision support",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["generative-AI", "LLM", "intelligence-analysis", "decision-support", "OSINT", "dual-use", "procurement", "military-intelligence"],
@@ -395,7 +464,7 @@
     "country": "China",
     "actors": ["PLA", "Central Military Commission (CMC)", "CCP"],
     "vendor_model": ["General-purpose AI", "LLMs"],
-    "use_case": "Speeding up command decision-making, optimizing operational plans, predicting battlefield conditions, controlling/targeting firepower, achieving \"intelligentization\"",
+    "use_case": "AI-enhanced battlefield command and operational planning, achieving \"intelligentization\"",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["intelligentization", "decision-support", "command-and-control", "LLM", "strategic-planning", "military-doctrine"],
@@ -418,7 +487,7 @@
     "country": "China",
     "actors": ["PLA", "Ziyan", "DJI"],
     "vendor_model": ["Autonomous drones", "unspecified AI models for swarming"],
-    "use_case": "Uncrewed vehicles (air, ground, sea, subsea), swarm attacks, autonomous reconnaissance, targeting, firing, distributed ISR",
+    "use_case": "Uncrewed vehicles, swarm attacks, autonomous reconnaissance, targeting, firing, distributed ISR",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["autonomous-systems", "drones", "swarm-AI", "LAWS", "military-civil-fusion", "ISR"],
@@ -435,36 +504,13 @@
     ]
   },
   {
-    "id": "china-ai-006",
-    "project": "Huawei Indigenous AI Ecosystem Development",
-    "year": 2017,
-    "country": "China",
-    "actors": ["Huawei", "SMIC", "Tongfu Microelectronics", "Chinese government"],
-    "vendor_model": ["Huawei Ascend", "Huawei CANN", "Huawei OpenEuler"],
-    "use_case": "Strategic self-reliance in AI hardware/software, running AI computational workloads, alternative to Western tools, powering LLMs and other AI applications",
-    "status": "Active",
-    "confidence": "confirmed",
-    "tags": ["self-reliance", "AI-chips", "software-frameworks", "military-civil-fusion", "procurement", "strategic-competition", "national-security"],
-    "lat": null,
-    "lon": null,
-    "summary": "Huawei is leading China's strategic drive for self-reliance in AI, developing indigenous general-purpose AI chips (Ascend) and software frameworks (CANN) to reduce dependence on foreign technology for national security.",
-    "description": "Huawei has emerged as a central player in China's national strategy to achieve 'self-reliance and self-strengthening' in artificial intelligence, particularly concerning indigenous AI chips and software. This drive is significantly influenced by U.S. export controls, which prompted Huawei to shift its focus to domestic manufacturing after being placed on the U.S. Department of Commerce's Entity List in 2019. Huawei collaborates closely with Semiconductor Manufacturing International Corporation (SMIC), China's most advanced logic foundry, and has developed its Ascend series of general-purpose AI chips. On the software front, Huawei is developing its own machine learning framework, CANN, as an alternative to Nvidia's CUDA, and contributes to operating systems like OpenEuler.",
-    "sources": [
-      {
-        "title": "China's drive toward self-reliance in artificial intelligence: from chips to large language models",
-        "url": "https://merics.org/en/report/chinas-drive-toward-self-reliance-artificial-intelligence-chips-large-language-models",
-        "type": "report"
-      }
-    ]
-  },
-  {
     "id": "china-ai-007",
     "project": "Baidu Autonomous Vehicle Development",
     "year": 2017,
     "country": "China",
     "actors": ["Baidu", "Chinese State Council"],
     "vendor_model": ["Baidu Apollo Go", "underlying general-purpose AI"],
-    "use_case": "Commercial autonomous vehicles, dual-use potential for military logistics, reconnaissance, unmanned ground vehicles",
+    "use_case": "Autonomous vehicles with dual-use potential for military logistics",
     "status": "Active",
     "confidence": "high",
     "tags": ["dual-use", "autonomous-vehicles", "national-AI-team", "military-civil-fusion", "logistics", "intelligent-transportation"],
@@ -487,7 +533,7 @@
     "country": "China",
     "actors": ["Chinese Academy of Sciences (CAS)", "PLA Academy of Military Sciences (AMS)"],
     "vendor_model": null,
-    "use_case": "Deep cooperation between state, military, and education sectors to implement programs designed to fill niche priority areas in defense science, including AI research and development",
+    "use_case": "Military-civil fusion for defense AI research",
     "status": "Active",
     "confidence": "high",
     "tags": ["military-civil-fusion", "research", "academic-collaboration", "strategic-cooperation", "AI-research"],
@@ -510,7 +556,7 @@
     "country": "UK",
     "actors": ["AUKUS (Australia, UK, US)", "Defence Science and Technology Laboratory (Dstl)"],
     "vendor_model": ["Unspecified AI-enabled UAVs"],
-    "use_case": "Locating, disabling, and destroying targets on the ground using AI-enabled uncrewed aerial vehicles. This represents a significant step towards autonomous targeting capabilities in a collaborative allied environment.",
+    "use_case": "AI-enabled UAVs for autonomous target engagement",
     "status": "Tested",
     "confidence": "confirmed",
     "tags": ["dual-use", "autonomous systems", "international collaboration", "testing"],
@@ -533,7 +579,7 @@
     "country": "UK",
     "actors": ["Royal Navy", "Defence Science and Technology Laboratory (Dstl)", "industry partners"],
     "vendor_model": null,
-    "use_case": "Early detection of supersonic missile threats and rapid hazard assessment to recommend counter-threat options for naval crews. This marks the first time AI was used on-board Royal Navy ships in a NATO exercise.",
+    "use_case": "AI missile threat detection for naval crews",
     "status": "Tested",
     "confidence": "confirmed",
     "tags": ["decision support", "naval operations", "testing", "international collaboration"],
@@ -556,7 +602,7 @@
     "country": "UK",
     "actors": ["Defence Science and Technology Laboratory (Dstl)", "US Air Force Research Laboratory (AFRL)"],
     "vendor_model": ["Jointly developed AI toolbox (unspecified algorithms/models)"],
-    "use_case": "Deployment of an AI toolbox onto UK-US uncrewed ground and aerial vehicles to make AI agile, adaptable, trustworthy, and accessible for warfighters in military exercises.",
+    "use_case": "Joint AI toolbox for uncrewed vehicle operations",
     "status": "Tested",
     "confidence": "confirmed",
     "tags": ["autonomous systems", "human-machine teaming", "international collaboration", "testing"],
@@ -579,7 +625,7 @@
     "country": "UK",
     "actors": ["UK government", "UK Armed Forces"],
     "vendor_model": ["New Artificial Intelligence (AI) and software (unspecified)"],
-    "use_case": "Enabling faster pinpointing and elimination of enemy targets, enhancing integration across various military domains, and improving communication among UK Armed Forces. Directly influenced by lessons from the conflict in Ukraine.",
+    "use_case": "AI-powered rapid target identification and elimination system",
     "status": "Under Development",
     "confidence": "confirmed",
     "tags": ["targeting", "decision support", "network-centric warfare", "procurement"],
@@ -602,7 +648,7 @@
     "country": "UK",
     "actors": ["Defence Artificial Intelligence Centre (DAIC)", "Defence Digital", "Defence Equipment & Support", "Dstl"],
     "vendor_model": null,
-    "use_case": "Championing, enabling, and innovating artificial intelligence across UK Defence to transform it into an 'AI-ready' organization for strategic advantage. This includes fostering collaboration with industry, academia, and allies.",
+    "use_case": "AI transformation and innovation across UK Defence",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["policy", "procurement", "research & development", "organizational transformation"],
@@ -625,7 +671,7 @@
     "country": "UK",
     "actors": ["British Army", "Army AI Centre (AAIC)", "Army Headquarters"],
     "vendor_model": ["Internal Army initiatives, unspecified AI technologies"],
-    "use_case": "Providing coherence, governance, guidance, and regulation for Army AI capability, supporting data governance (Programme THEIA), AI skills development (Programme CASTLE), and high-impact research/experimentation (Pathfinding Projects).",
+    "use_case": "Army AI governance, skills development, and experimentation",
     "status": "Active",
     "confidence": "confirmed",
     "tags": ["policy", "research & development", "data management", "workforce development"],
@@ -648,7 +694,7 @@
     "country": "UK",
     "actors": ["Ministry of Defence (MOD)"],
     "vendor_model": null,
-    "use_case": "Optimizing the cost and efficiency of logistics, stores, maintenance, and operational availability of components by identifying interchangeable components from a large database.",
+    "use_case": "AI-optimized logistics and component management system",
     "status": "Planned",
     "confidence": "medium",
     "tags": ["logistics", "efficiency", "autonomous systems"],
@@ -671,7 +717,7 @@
     "country": "UK",
     "actors": ["Ministry of Defence (MOD)"],
     "vendor_model": ["Unspecified AI/ML algorithms"],
-    "use_case": "Enhancing situational awareness and understanding through greater fusion and exploitation of vast amounts of operational data, providing decision advantage from back office to battlefield.",
+    "use_case": "AI-enhanced situational awareness through data exploitation",
     "status": "Planned",
     "confidence": "medium",
     "tags": ["intelligence", "data exploitation", "decision support"],
@@ -694,7 +740,7 @@
     "country": "UK",
     "actors": ["Ministry of Defence (MOD)"],
     "vendor_model": ["Unspecified AI systems"],
-    "use_case": "Integrating humans and machines to improve military effectiveness, particularly in command and control operations and reducing cognitive load for personnel.",
+    "use_case": "Human-machine teaming for enhanced military effectiveness",
     "status": "Planned",
     "confidence": "medium",
     "tags": ["human-machine teaming", "decision support", "operational efficiency"],
