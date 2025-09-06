@@ -1,4 +1,3 @@
-// ArmsWatch Enhanced JavaScript
 class ArmsWatch {
   constructor() {
     this.dataset = [];
@@ -6,24 +5,14 @@ class ArmsWatch {
     this.sortDescending = true;
     this.isLoading = true;
     
-    // Initialize the application
     this.init();
   }
 
   async init() {
-    // Show loading screen
     this.showLoadingScreen();
-    
-    // Load data
     await this.loadData();
-    
-    // Setup event listeners
     this.setupEventListeners();
-    
-    // Initialize components
     this.initializeComponents();
-    
-    // Hide loading screen and show content
     this.hideLoadingScreen();
   }
 
@@ -44,7 +33,6 @@ class ArmsWatch {
   const loadingScreen = document.getElementById('loadingScreen');
   const mainContent = document.getElementById('mainContent');
   
-  // Add a small delay to ensure DOM is ready
   await this.delay(500);
   
   if (loadingScreen) {
@@ -60,7 +48,6 @@ class ArmsWatch {
   
   this.isLoading = false;
   
-  // Start entrance animations
   setTimeout(() => {
     this.animatePageEntrance();
   }, 600);
@@ -110,22 +97,16 @@ class ArmsWatch {
   }
 
   setupEventListeners() {
-    // Navigation
     this.setupNavigation();
     
-    // Search and filters
     this.setupSearchAndFilters();
     
-    // Modal
     this.setupModal();
     
-    // Mobile navigation
     this.setupMobileNavigation();
     
-    // Scroll effects
     this.setupScrollEffects();
     
-    // Country cards
     this.setupCountryCards();
   }
 
@@ -162,7 +143,6 @@ class ArmsWatch {
       });
     });
     
-    // Explore button
     const exploreBtn = document.getElementById('exploreBtn');
     if (exploreBtn) {
       exploreBtn.addEventListener('click', () => {
@@ -216,7 +196,6 @@ class ArmsWatch {
       });
     }
     
-    // Close on escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modal && modal.getAttribute('aria-hidden') === 'false') {
         this.closeModal();
@@ -303,15 +282,10 @@ class ArmsWatch {
       targetPage.classList.add('active');
       this.currentPage = pageName;
       
-      // Load page-specific content
       if (pageName === 'us' || pageName === 'china' || pageName === 'uk') {
         this.loadCountryPage(pageName);
       }
-      
-      // Scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      
-      // Animate page entrance
       setTimeout(() => {
         this.animatePageEntrance();
       }, 100);
@@ -438,23 +412,18 @@ class ArmsWatch {
   }
 
   populateYearFilters() {
-    // Use Set to ensure unique years
     const years = [...new Set(this.dataset.map(item => item.year))].sort((a, b) => b - a);
     const countries = ['us', 'china', 'uk'];
     
     countries.forEach(country => {
       const select = document.getElementById(`${country}YearFilter`);
       if (select) {
-        // Clear existing options except "All Years"
         while (select.children.length > 1) {
           select.removeChild(select.lastChild);
         }
         
-        // Add each year only once
         years.forEach(year => {
-          // Skip if year is null or undefined
           if (year) {
-            // Check if this year already exists in the dropdown
             const exists = Array.from(select.options).some(option => option.value === year.toString());
             
             // Only add if it doesn't already exist
@@ -515,7 +484,6 @@ class ArmsWatch {
       icon.className = this.sortDescending ? 'fas fa-sort-amount-down' : 'fas fa-sort-amount-up';
     }
     
-    // Re-filter with new sort order
     this.filterCountryData(country);
   }
 
@@ -523,14 +491,11 @@ class ArmsWatch {
     const modal = document.getElementById('incidentModal');
     if (!modal) return;
     
-    // Populate modal content
     this.populateModalContent(incident);
     
-    // Show modal
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
     
-    // Focus on close button for accessibility
     setTimeout(() => {
       const closeBtn = document.getElementById('modalClose');
       if (closeBtn) closeBtn.focus();
@@ -614,7 +579,6 @@ class ArmsWatch {
       });
     }
     
-    // Confidence
     const modalConfidence = document.getElementById('modalConfidence');
     if (modalConfidence) {
       modalConfidence.textContent = (incident.confidence || 'medium').toUpperCase();
@@ -710,7 +674,6 @@ class ArmsWatch {
   }
 }
 
-// Intersection Observer for scroll animations
 class ScrollAnimations {
   constructor() {
     this.setupObserver();
@@ -731,7 +694,6 @@ class ScrollAnimations {
       });
     }, options);
 
-    // Observe elements when they're added to the DOM
     this.observeElements();
   }
 
@@ -750,19 +712,15 @@ class ScrollAnimations {
   }
 }
 
-// Initialize application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize main app
   window.armsWatch = new ArmsWatch();
   
-  // Initialize scroll animations
   window.scrollAnimations = new ScrollAnimations();
   
   // Refresh animations when new content is loaded
   const originalRenderMethod = window.armsWatch.renderCountryIncidents;
   window.armsWatch.renderCountryIncidents = function(...args) {
     originalRenderMethod.apply(this, args);
-    // Refresh scroll animations for new content
     setTimeout(() => {
       window.scrollAnimations.refresh();
     }, 100);
@@ -772,17 +730,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // Handle page visibility changes for better performance
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
-    // Pause animations when page is hidden
     document.body.classList.add('paused');
   } else {
-    // Resume animations when page is visible
     document.body.classList.remove('paused');
   }
 });
 
 // Handle resize events
 window.addEventListener('resize', () => {
-  // Refresh scroll animations on resize
   if (window.scrollAnimations) {
     setTimeout(() => {
       window.scrollAnimations.refresh();
@@ -790,7 +745,6 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Service Worker registration for better performance (optional)
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // Register service worker if available
