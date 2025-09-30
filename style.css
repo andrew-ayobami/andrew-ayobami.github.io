@@ -1,6 +1,4 @@
-/* CSS Variables */
 :root {
-  /* Colors - Inspired by reference sites */
   --bg-primary: #0a0a0f;
   --bg-secondary: #12121a;
   --bg-tertiary: #1a1a26;
@@ -10,17 +8,16 @@
   --text-primary: #ffffff;
   --text-secondary: #a0a0ab;
   --text-muted: #6b6b76;
-  --text-accent: #DDA15F; /* Changed from #00d4ff to #DDA15F */
+  --text-accent: #DDA15F; 
   
-  --accent-primary: #DDA15F; /* Changed from #00d4ff to #DDA15F */
-  --accent-secondary: #785531; /* Changed from #7c3aed to #785531 */
-  --accent-gradient: linear-gradient(135deg, #DDA15F 0%, #785531 100%); /* Updated gradient */
-  --accent-glow: 0 0 30px rgba(221, 161, 95, 0.3); /* Updated glow color */
+  --accent-primary: #DDA15F; 
+  --accent-secondary: #785531; 
+  --accent-gradient: linear-gradient(135deg, #DDA15F 0%, #785531 100%);
+  --accent-glow: 0 0 30px rgba(221, 161, 95, 0.3); 
   
   --border-primary: rgba(255, 255, 255, 0.08);
   --border-secondary: rgba(255, 255, 255, 0.12);
-  --border-accent: rgba(221, 161, 95, 0.3); /* Updated from blue to brown */
-  
+  --border-accent: rgba(221, 161, 95, 0.3); 
   --shadow-small: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.4);
   --shadow-large: 0 20px 60px rgba(0, 0, 0, 0.6);
@@ -41,7 +38,6 @@
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -100,6 +96,7 @@ body::before {
 }
 
 /* Loading Screen */
+
 .loading-screen {
   position: fixed;
   top: 0;
@@ -623,7 +620,7 @@ body::before {
   }
 }
 
-/* Section Styles */
+            /* Section Styles */
 .featured-section,
 .countries-section {
   padding: var(--section-padding);
@@ -641,7 +638,6 @@ body::before {
   color: var(--accent-primary);
 }
 
-/* Featured Grid */
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -962,10 +958,9 @@ body::before {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  background: transparent; /* Ensure transparent background */
-  position: relative; /* Add position relative */
-  z-index: 1; /* Ensure proper stacking context */
-}
+  background: transparent; 
+  position: relative; 
+  z-index: 1;
 
 .incident-footer {
   display: flex;
@@ -1007,7 +1002,7 @@ body::before {
   transform: translateY(-2px);
 }
 
-/* Enhanced Modal */
+/*  Modal */
 .incident-modal {
   position: fixed;
   top: 0;
@@ -1047,8 +1042,8 @@ body::before {
   background: var(--bg-secondary);
   border: 1px solid var(--border-secondary);
   border-radius: var(--border-radius-lg);
-  display: flex; /* Add this */
-  flex-direction: column; /* Add this */
+  display: flex; 
+  flex-direction: column; 
   overflow: hidden;
   box-shadow: var(--shadow-large);
   transform: scale(0.9);
@@ -1088,16 +1083,16 @@ body::before {
 }
 
 .modal-content {
-  flex: 1; /* Add this */
+  flex: 1; 
   overflow-y: auto;
   padding: 0;
-  max-height: calc(90vh - 4rem); /* Add this to account for padding */
+  max-height: calc(90vh - 4rem); 
 }
 
 .modal-body {
   padding: 2rem;
   padding-top: 3rem;
-  padding-bottom: 3rem; /* Ensure there's enough padding at the bottom */
+  padding-bottom: 3rem; 
 }
 
 .incident-header {
@@ -1557,16 +1552,15 @@ body::before {
   }
   
   .hero-section {
-    padding: 1rem 0; /* Further reduced padding for smaller screens */
-    min-height: auto; /* Remove minimum height constraint */
-  }
+    padding: 1rem 0; 
+    min-height: auto;
   
   .hero-visual {
-    margin-bottom: 1rem; /* Add some space below the globe */
+    margin-bottom: 1rem; 
   }
   
   .globe-container {
-    width: 250px; /* Slightly smaller globe */
+    width: 250px;
     height: 250px;
   }
   
@@ -1674,7 +1668,7 @@ body::before {
   }
   
   .contribution-item i {
-    font-size: 1.7rem; /* Reduced size for icons */
+    font-size: 1.7rem;
   }
   
   .fixed-footer {
@@ -1688,18 +1682,16 @@ body::before {
   }
   
   .social-link {
-    width: 45px;  /* Increased from 30px by 15% */
-    height: 45px; /* Increased from 30px by 15% */
+    width: 45px;  
+    height: 45px;
   }
   
   .incident-card {
-    /* Force hardware acceleration to fix backdrop-filter inconsistencies */
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
   }
   
   .incident-summary {
-    /* Ensure consistent rendering on mobile */
     background: transparent !important;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
@@ -1785,7 +1777,7 @@ body::before {
   }
 }
 
-/* Scrollbar Styling */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
