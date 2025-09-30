@@ -17,7 +17,8 @@
   
   --border-primary: rgba(255, 255, 255, 0.08);
   --border-secondary: rgba(255, 255, 255, 0.12);
-  --border-accent: rgba(221, 161, 95, 0.3); 
+  --border-accent: rgba(221, 161, 95, 0.3); /* Updated from blue to brown */
+  
   --shadow-small: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.4);
   --shadow-large: 0 20px 60px rgba(0, 0, 0, 0.6);
@@ -38,6 +39,7 @@
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -96,7 +98,6 @@ body::before {
 }
 
 /* Loading Screen */
-
 .loading-screen {
   position: fixed;
   top: 0;
@@ -620,7 +621,7 @@ body::before {
   }
 }
 
-            /* Section Styles */
+/* Section Styles */
 .featured-section,
 .countries-section {
   padding: var(--section-padding);
@@ -638,6 +639,7 @@ body::before {
   color: var(--accent-primary);
 }
 
+/* Featured Grid */
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -960,7 +962,8 @@ body::before {
   line-height: 1.6;
   background: transparent; 
   position: relative; 
-  z-index: 1;
+  z-index: 1; 
+}
 
 .incident-footer {
   display: flex;
@@ -1002,7 +1005,7 @@ body::before {
   transform: translateY(-2px);
 }
 
-/*  Modal */
+/* Enhanced Modal */
 .incident-modal {
   position: fixed;
   top: 0;
@@ -1042,8 +1045,8 @@ body::before {
   background: var(--bg-secondary);
   border: 1px solid var(--border-secondary);
   border-radius: var(--border-radius-lg);
-  display: flex; 
-  flex-direction: column; 
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
   overflow: hidden;
   box-shadow: var(--shadow-large);
   transform: scale(0.9);
@@ -1454,7 +1457,7 @@ body::before {
   transform: translateY(-2px);
 }
 
-/* Fixed Footer */
+/*  Footer */
 .fixed-footer {
   position: fixed;
   bottom: 2rem;
@@ -1553,14 +1556,15 @@ body::before {
   
   .hero-section {
     padding: 1rem 0; 
-    min-height: auto;
+    min-height: auto; 
+  }
   
   .hero-visual {
     margin-bottom: 1rem; 
   }
   
   .globe-container {
-    width: 250px;
+    width: 250px; 
     height: 250px;
   }
   
@@ -1668,7 +1672,7 @@ body::before {
   }
   
   .contribution-item i {
-    font-size: 1.7rem;
+    font-size: 1.7rem; 
   }
   
   .fixed-footer {
@@ -1737,7 +1741,6 @@ body::before {
   }
 }
 
-/* Utility Classes */
 .fade-in {
   animation: fadeIn 0.6s ease-out;
 }
@@ -1777,7 +1780,7 @@ body::before {
   }
 }
 
-/* Scrollbar */
+/* Scrollbar  */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -1793,4 +1796,4 @@ body::before {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-primary);
-}}};
+}
