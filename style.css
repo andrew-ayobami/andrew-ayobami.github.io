@@ -649,12 +649,14 @@ body::before {
 
 /* Countries Grid */
 .countries-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .country-card {
+  flex: 0 0 300px; /* Fixed width instead of flexible grid cells */
   background: var(--bg-glass);
   border: 1px solid var(--border-primary);
   border-radius: var(--border-radius-lg);
@@ -665,6 +667,7 @@ body::before {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .country-card::before {

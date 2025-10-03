@@ -60,7 +60,8 @@ class ArmsWatch {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    this.dataset = data.filter(item => ['US', 'China', 'UK'].includes(item.country));
+    // Remove the filter to include all countries including Israel and Ukraine
+    this.dataset = data;
     this.dataset.sort((a, b) => (b.year || 0) - (a.year || 0));
     
     console.log('Data loaded successfully:', this.dataset.length, 'items');
@@ -152,7 +153,7 @@ class ArmsWatch {
   }
 
   setupSearchAndFilters() {
-    const countries = ['us', 'china', 'uk'];
+    const countries = ['us', 'china', 'uk', 'israel', 'ukraine'];
     
     countries.forEach(country => {
       const searchInput = document.getElementById(`${country}Search`);
@@ -270,7 +271,6 @@ class ArmsWatch {
       }
     });
     
-    // Hide all pages
     const pages = document.querySelectorAll('.page');
     pages.forEach(page => {
       page.classList.remove('active');
@@ -282,7 +282,7 @@ class ArmsWatch {
       targetPage.classList.add('active');
       this.currentPage = pageName;
       
-      if (pageName === 'us' || pageName === 'china' || pageName === 'uk') {
+      if (pageName === 'us' || pageName === 'china' || pageName === 'uk' || pageName === 'israel' || pageName === 'ukraine') {
         this.loadCountryPage(pageName);
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -367,7 +367,6 @@ class ArmsWatch {
     const container = document.getElementById('featuredGrid');
     if (!container) return;
     
-    // Get most recent incidents (up to 6)
     const featured = this.dataset
       .sort((a, b) => (b.year || 0) - (a.year || 0))
       .slice(0, 6);
@@ -383,10 +382,17 @@ class ArmsWatch {
 
   updateOverviewStats() {
     const totalIncidents = document.getElementById('totalIncidents');
+    const totalCountries = document.getElementById('totalCountries');
     const latestYear = document.getElementById('latestYear');
     
     if (totalIncidents) {
       this.animateCounter(totalIncidents, this.dataset.length);
+    }
+    
+    if (totalCountries) {
+      // Update to show 5 countries instead of hardcoded 3
+      const uniqueCountries = [...new Set(this.dataset.map(item => item.country))].length;
+      this.animateCounter(totalCountries, uniqueCountries);
     }
     
     if (latestYear && this.dataset.length > 0) {
@@ -396,7 +402,7 @@ class ArmsWatch {
   }
 
   updateCountryCounts() {
-    const countries = ['us', 'china', 'uk'];
+    const countries = ['us', 'china', 'uk', 'israel', 'ukraine'];
     
     countries.forEach(country => {
       const countElement = document.getElementById(`${country}Count`);
@@ -412,8 +418,16 @@ class ArmsWatch {
   }
 
   populateYearFilters() {
-    const years = [...new Set(this.dataset.map(item => item.year))].sort((a, b) => b - a);
-    const countries = ['us', 'china', 'uk'];
+    // Get all years from the dataset
+    let years = [...new Set(this.dataset.map(item => item.year))].sort((a, b) => b - a);
+    
+    // Ensure 2020 is included
+    if (!years.includes(2020)) {
+      years.push(2020);
+      years.sort((a, b) => b - a); // Re-sort after adding
+    }
+    
+    const countries = ['us', 'china', 'uk', 'israel', 'ukraine'];
     
     countries.forEach(country => {
       const select = document.getElementById(`${country}YearFilter`);
@@ -426,7 +440,6 @@ class ArmsWatch {
           if (year) {
             const exists = Array.from(select.options).some(option => option.value === year.toString());
             
-            // Only add if it doesn't already exist
             if (!exists) {
               const option = document.createElement('option');
               option.value = year;
@@ -466,7 +479,6 @@ class ArmsWatch {
       });
     }
     
-    // Apply year filter
     if (selectedYear) {
       filteredData = filteredData.filter(item => item.year == selectedYear);
     }
@@ -484,7 +496,48 @@ class ArmsWatch {
       icon.className = this.sortDescending ? 'fas fa-sort-amount-down' : 'fas fa-sort-amount-up';
     }
     
-    this.filterCountryData(country);
+    // Get the filtered data first
+    const searchInput = document.getElementById(`${country}Search`);
+    const yearFilter = document.getElementById(`${country}YearFilter`);
+    
+    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const selectedYear = yearFilter ? yearFilter.value : '';
+    
+    let filteredData = this.dataset.filter(item => 
+      item.country.toLowerCase() === country.toLowerCase() ||
+      (country === 'us' && item.country === 'US')
+    );
+    
+    // Apply search filter
+    if (searchTerm) {
+      filteredData = filteredData.filter(item => {
+        const searchableText = [
+          item.project,
+          item.summary,
+          item.description,
+          ...(item.tags || []),
+          ...(item.actors || [])
+        ].join(' ').toLowerCase();
+        
+        return searchableText.includes(searchTerm);
+      });
+    }
+    
+    if (selectedYear) {
+      filteredData = filteredData.filter(item => item.year == selectedYear);
+    }
+    
+    // Apply sorting based on the toggle state
+    filteredData.sort((a, b) => {
+      if (this.sortDescending) {
+        return (b.year || 0) - (a.year || 0);
+      } else {
+        return (a.year || 0) - (b.year || 0);
+      }
+    });
+    
+    // Render the sorted data
+    this.renderCountryIncidents(country, filteredData);
   }
 
   showModal(incident) {
@@ -503,7 +556,6 @@ class ArmsWatch {
   }
 
   populateModalContent(incident) {
-    // Title and meta
     const modalTitle = document.getElementById('modalTitle');
     const modalMeta = document.getElementById('modalMeta');
     const modalFlag = document.getElementById('modalFlag');
@@ -634,7 +686,9 @@ class ArmsWatch {
     const icons = {
       'US': 'fas fa-flag-usa',
       'China': 'fas fa-flag',
-      'UK': 'fas fa-crown'
+      'UK': 'fas fa-crown',
+      'Israel': 'fas fa-star-of-david',
+      'Ukraine': 'fas fa-shield-alt'
     };
     return icons[country] || 'fas fa-flag';
   }
@@ -747,7 +801,7 @@ window.addEventListener('resize', () => {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    // Register service worker if available
-    // navigator.serviceWorker.register('/sw.js');
+
+
   });
 }

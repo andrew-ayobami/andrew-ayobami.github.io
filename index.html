@@ -175,6 +175,40 @@
                   <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
+              
+              <!-- New country card for Israel -->
+              <div class="country-card" data-page="israel">
+                <div class="country-flag">
+                  <i class="fas fa-star-of-david"></i>
+                </div>
+                <h3>Israel</h3>
+                <p>Advanced AI military applications with focus on intelligence and targeting systems.</p>
+                <div class="country-stats">
+                  <span class="incident-count" id="israelCount">0</span>
+                  <span>incidents tracked</span>
+                </div>
+                <button class="country-btn">
+                  <span>Explore</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              
+              <!-- New country card for Ukraine -->
+              <div class="country-card" data-page="ukraine">
+                <div class="country-flag">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Ukraine</h3>
+                <p>Emerging AI applications in defense and security during ongoing conflict.</p>
+                <div class="country-stats">
+                  <span class="incident-count" id="ukraineCount">0</span>
+                  <span>incidents tracked</span>
+                </div>
+                <button class="country-btn">
+                  <span>Explore</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -328,6 +362,98 @@
         </div>
       </div>
 
+      <!-- Israel Page -->
+      <div id="israel-page" class="page country-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="page-nav">
+              <button class="back-btn" data-page="overview">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Overview</span>
+              </button>
+            </div>
+            <div class="page-title-section">
+              <div class="page-flag">
+                <i class="fas fa-star-of-david"></i>
+              </div>
+              <div class="page-title-content">
+                <h1>Israel</h1>
+                <p>Military AI developments and initiatives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-content">
+          <div class="container">
+            <div class="content-controls">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="israelSearch" placeholder="Search Israel incidents...">
+              </div>
+              <div class="filter-controls">
+                <select id="israelYearFilter">
+                  <option value="">All Years</option>
+                </select>
+                <button id="israelSortBtn" class="sort-btn">
+                  <i class="fas fa-sort-amount-down"></i>
+                  <span>Sort by Year</span>
+                </button>
+              </div>
+            </div>
+            <div class="incidents-grid" id="israelIncidents">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ukraine Page -->
+      <div id="ukraine-page" class="page country-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="page-nav">
+              <button class="back-btn" data-page="overview">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Overview</span>
+              </button>
+            </div>
+            <div class="page-title-section">
+              <div class="page-flag">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="page-title-content">
+                <h1>Ukraine</h1>
+                <p>Military AI developments and initiatives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-content">
+          <div class="container">
+            <div class="content-controls">
+              <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="ukraineSearch" placeholder="Search Ukraine incidents...">
+              </div>
+              <div class="filter-controls">
+                <select id="ukraineYearFilter">
+                  <option value="">All Years</option>
+                </select>
+                <button id="ukraineSortBtn" class="sort-btn">
+                  <i class="fas fa-sort-amount-down"></i>
+                  <span>Sort by Year</span>
+                </button>
+              </div>
+            </div>
+            <div class="incidents-grid" id="ukraineIncidents">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- About Page -->
       <div id="about-page" class="page about-page">
         <div class="page-header">
@@ -356,7 +482,7 @@
               
               <p class="about-para">
                 Over time, I intend to cover as many countries as are relevant to the topic. The current scope tracks 
-                the United States, China, and the United Kingdom, but this is merely because this is a work in progress. 
+                the United States, China, the United Kingdom, Israel, and Ukraine, but this is merely because this is a work in progress. 
                 I also intend to cover the policy and risk implications of what these countries are doing.
               </p>
               

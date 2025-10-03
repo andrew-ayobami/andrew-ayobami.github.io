@@ -755,5 +755,443 @@
         "type": "government"
       }
     ]
-  }
+  }, 
+
+
+
+
+  {
+  "id": "ua-drone-carriers-autonomous-strikes-2025",
+  "project": "Drone Carriers Autonomous Strike Missions",
+  "year": 2025,
+  "country": "Ukraine",
+  "actors": ["Ukrainian forces", "Private/Commercial drone groups", "Ukrainian developers (reported)"],
+  "vendor_model": [],
+  "use_case": "Long-range autonomous strike drones / drone carriers",
+  "status": "Experimental Deployment",
+  "confidence": "High",
+  "tags": ["autonomous strike", "drone carrier", "long-range", "UAV", "experiments"],
+  "lat": null,
+  "lon": null,
+  "summary": "Forces in Ukraine reportedly used ‘drone carriers’ that launch long-range autonomous strikes against Russian positions in 2025, representing an escalation in autonomous strike capability.",
+  "description": "According to Forbes, reports indicate Ukraine has conducted experimental use of drone carriers—platforms that carry smaller UAVs to a launch point and then dispatch them to strike targets autonomously. These missions are said to extend the National reach, reduce exposure of manned assets, and complicate Russian air defenses. Autonomy level and fidelity of strike control vary in reports.",
+  "sources": [
+    {
+      "title": "Ukraine Drone Carriers Launch First Long-Range Autonomous Strikes",
+      "url": "https://www.forbes.com/sites/davidhambling/2025/05/26/ukraine-drone-carriers-launch-first-long-range-autonomous-strikes/",
+      "type": "news"
+    },
+    {
+      "title": "Ukraine tests drone carriers for autonomous payload delivery: evolving UAV strategy",
+      "url": "https://www.defensenews.com/global/europe/2025/06/02/ukraine-tests-drone-carriers/", 
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "ua-ai-drone-systems-rollout-2024",
+  "project": "AI-augmented drone systems rollout",
+  "year": 2024,
+  "country": "Ukraine",
+  "actors": ["NORDA Dynamics", "Ukrainian drone manufacturers", "Ukraine Ministry of Defence"],
+  "vendor_model": [],
+  "use_case": "AI/Computer vision guidance for strike drones under EW (electronic warfare) conditions",
+  "status": "Deployed",
+  "confidence": "confirmed",
+  "tags": ["drone", "computer-vision", "autonomy", "electronic warfare", "strike support"],
+  "lat": null,
+  "lon": null,
+  "summary": "Ukraine deployed dozens of AI-augmented drone systems from domestic manufacturers which use computer vision to guide drones to targets even under signal jamming.",
+  "description": "According to Reuters, Ukraine integrated multiple AI systems from domestic firms like NORDA Dynamics to guide strike drones in electronic warfare environments. The AI enables drones to autonomously complete the final leg of a mission after a pilot designates a target, overcoming jamming, reducing pilot burden, and increasing strike efficiency.",
+  "sources": [
+    {
+      "title": "Ukraine rolls out dozens of AI systems to help its drones hit targets",
+      "url": "https://www.reuters.com/world/europe/ukraine-rolls-out-dozens-ai-systems-help-its-drones-hit-targets-2024-10-31/",
+      "type": "news"
+    },
+    {
+      "title": "Ukraine rolls out dozens of AI systems to help its drones hit targets (re-reporting)",
+      "url": "https://ca.news.yahoo.com/ukraine-rolls-dozens-ai-systems-112049603.html",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "ua-sky-sentinel-2025",
+  "project": "Sky Sentinel",
+  "year": 2025,
+  "country": "Ukraine",
+  "actors": ["Ukraine Air Defense / Ukrainian developers", "Ukrainian military operators"],
+  "vendor_model": [],
+  "use_case": "AI-powered automated turret for drone / missile interception",
+  "status": "Deployed",
+  "confidence": "confirmed",
+  "tags": ["turret", "drone defense", "autonomous targeting", "air defense"],
+  "lat": null,
+  "lon": null,
+  "summary": "Ukraine deployed Sky Sentinel, an AI-powered turret system that autonomously detects, tracks, and intercepts Shahed drones in front-line and urban zones, reportedly achieving at least six kills in combat tests.",
+  "description": "Sky Sentinel is a domestically developed AI-controlled air defense turret equipped with an M2 Browning machine gun. Acting autonomously, it can scan 360°, distinguish aerial threats, calculate trajectories, and fire when human authorization is granted. Reports from multiple outlets (Business Insider, Forbes, RBC Ukraine, KyivPost, The Defense Post) document its field deployment, claims of successful drone kills, and technical design features like reaction speed, algorithmic targeting, and suppression of mechanical slack.",
+  "sources": [
+    {
+      "title": "Ukraine is using an AI-powered, automated turret to shoot down Russia’s devastating Shahed drones",
+      "url": "https://www.businessinsider.com/ukraine-ai-powered-turret-shoot-russia-shahed-drones-sky-sentinel-2025-6",
+      "type": "news"
+    },
+    {
+      "title": "Ukraine Turns To AI-Controlled Guns To Stop Russian Shahed Drones",
+      "url": "https://www.forbes.com/sites/davidhambling/2025/05/27/ukraine-turns-to-ai-controlled-guns-to-stop-russian-shahed-drones/",
+      "type": "news"
+    },
+    {
+      "title": "Ukraine develops AI-run turret to take down erratic Shahed drones",
+      "url": "https://www.thedefensepost.com/2025/06/03/ukraine-ai-shahed-drones/",
+      "type": "news"
+    },
+    {
+      "title": "Armed AI: Ukraine Deploys Autonomous Turret to Hunt Down Russian Drones",
+      "url": "https://www.kyivpost.com/analysis/53546",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "ua-palantir-intel-2024",
+  "project": "Palantir operational intelligence support",
+  "year": 2024,
+  "country": "Ukraine",
+  "actors": ["Palantir Technologies", "Ukrainian defence and reconstruction agencies (reported)"],
+  "vendor_model": ["Palantir Gotham / Foundry analytics"],
+  "use_case": "Operational intelligence fusion (battlefield analytics, logistics, reconstruction planning)",
+  "status": "Deployed",
+  "confidence": "confirmed",
+  "tags": ["intelligence", "data-fusion", "operations", "logistics"],
+  "lat": null,
+  "lon": null,
+  "summary": "Palantir’s platforms have been used broadly in Ukraine for battlefield analytics, logistics, and reconstruction planning, integrating diverse datasets for operational decision-making.",
+  "description": "Multiple reports document Palantir’s deployment in Ukraine for real-time data fusion, strike and logistical planning, and demining prioritisation. Company press materials and independent press coverage note Palantir’s active role and partnerships with Ukrainian ministries.",
+  "sources": [
+    {
+      "title": "How Tech Giants Turned Ukraine Into an AI War Lab (Time)",
+      "url": "https://time.com/6691662/ai-ukraine-war-palantir/",
+      "type": "news"
+    },
+    {
+      "title": "Palantir and Ministry of Economy of Ukraine Sign Demining Partnership",
+      "url": "https://investors.palantir.com/news-details/2024/Palantir-and-Ministry-of-Economy-of-Ukraine-Sign-Demining-Partnership/",
+      "type": "company"
+    }
+  ]
+},
+{
+  "id": "ua-auterion-skynode-2025",
+  "project": "Auterion Skynode drone strike kits",
+  "year": 2025,
+  "country": "Ukraine",
+  "actors": ["Auterion", "Ukrainian operators", "U.S. Department of Defense (contract) (reported)"],
+  "vendor_model": ["Auterion Skynode guidance kits"],
+  "use_case": "AI-enabled final-approach guidance for strike drones (target-locking)",
+  "status": "Active",
+  "confidence": "confirmed",
+  "tags": ["uav", "guided-munitions", "ai-guidance", "procurement"],
+  "lat": null,
+  "lon": null,
+  "summary": "Auterion announced a major contract to supply AI-powered Skynode guidance kits to Ukraine, enabling visual target-locking for strike drones amid contested RF environments.",
+  "description": "Auterion’s announced 2025 contract (reported in Reuters and company releases) intends to deliver tens of thousands of AI-enabled guidance kits that allow drones to visually lock onto targets during final approach—reducing reliance on contested radio links and improving accuracy in jamming environments.",
+  "sources": [
+    {
+      "title": "Auterion says it will provide Ukraine with 33,000 AI drone guidance kits",
+      "url": "https://www.reuters.com/business/aerospace-defense/auterion-says-it-will-provide-ukraine-with-33000-ai-drone-guidance-kits-2025-07-28/",
+      "type": "news"
+    },
+    {
+      "title": "Auterion Secures Contract to Deliver 33000 Skynode Drone Strike Kits to Ukraine",
+      "url": "https://auterion.com/auterion-secures-contract-to-deliver-33000-skynode-drone-strike-kits-to-ukraine/",
+      "type": "company"
+    }
+  ]
+},
+{
+  "id": "ua-primer-radio-nlp-2022",
+  "project": "Primer NLP for Russian radio chatter",
+  "year": 2022,
+  "country": "Ukraine",
+  "actors": ["Primer AI", "Ukrainian intelligence / allied partners (reported)"],
+  "vendor_model": ["Primer NLP analytic suite"],
+  "use_case": "Open-source signals analysis: NLP on unencrypted radio communications for tactical intelligence",
+  "status": "Deployed",
+  "confidence": "confirmed",
+  "tags": ["signals-intelligence", "nlp", "osint", "tactical-intel"],
+  "lat": null,
+  "lon": null,
+  "summary": "Primer deployed NLP tools to ingest and analyse unencrypted Russian radio communications, producing rapid insights on unit movements and morale.",
+  "description": "Primer’s AI platforms were used to transcribe, translate and summarise open Russian radio chatter and other communications in near real-time—helping analysts to spot disorganisation, movement patterns, and tactical indicators. Public-facing accounts from Primer and press coverage document these deployments.",
+  "sources": [
+    {
+      "title": "A New Era of Warfare: How AI Unlocks Intelligence from Russian Radio Chatter in Minutes",
+      "url": "https://primer.ai/public-sector/a-new-era-of-warfare-how-ai-unlocks-intelligence-from-russian-radio-chatter-in-minutes/",
+      "type": "company"
+    },
+    {
+      "title": "As Russia Plots Its Next Move, an AI Listens to the Chatter (Wired)",
+      "url": "https://www.wired.com/story/russia-ukraine-war-ai-surveillance/",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "ua-saker-scout-2023",
+  "project": "Saker Scout UAV autonomous strike use",
+  "year": 2023,
+  "country": "Ukraine",
+  "actors": ["Ukrainian forces", "Saker (commercial UAV conversions) (reported)"],
+  "vendor_model": ["Saker Scout (modified commercial UAV)"],
+  "use_case": "Autonomous target-seeking and strike-capable small UAVs",
+  "status": "Deployed",
+  "confidence": "High",
+  "tags": ["uav", "autonomy", "loitering-munitions", "strike"],
+  "lat": null,
+  "lon": null,
+  "summary": "Reports describe Saker Scout drones adapted for frontline use that can autonomously seek and attack certain Russian military objects in contested environments.",
+  "description": "Investigative and defence-press accounts from 2023 describe small UAV platforms (often repurposed commercial frames) fitted with autonomy or target-recognition software that enabled semi-autonomous or autonomous strike behaviours in environments with heavy jamming. Degree of autonomy and human-in-the-loop controls varied by report.",
+  "sources": [
+    {
+      "title": "Ukraine's AI Drones Seek And Attack Russian Forces Without Human Oversight",
+      "url": "https://www.forbes.com/sites/davidhambling/2023/10/17/ukraines-ai-drones-seek-and-attack-russian-forces-without-human-oversight/",
+      "type": "news"
+    },
+    {
+      "title": "Saker Scout UAV (overview and deployment reports)",
+      "url": "https://automatedresearch.org/weapon/saker-scout-uav/",
+      "type": "research"
+    }
+  ]
+},
+{
+  "id": "ua-palantir-demining-2024",
+  "project": "Palantir demining partnership",
+  "year": 2024,
+  "country": "Ukraine",
+  "actors": ["Palantir Technologies", "Ministry of Economy of Ukraine", "Humanitarian demining partners (e.g., HALO Trust) (reported)"],
+  "vendor_model": ["Palantir Gotham / Foundry analytics platform"],
+  "use_case": "Data-driven demining: mapping contamination, prioritisation, and operational coordination",
+  "status": "Active",
+  "confidence": "confirmed",
+  "tags": ["demining", "data-analytics", "humanitarian", "reconstruction"],
+  "lat": null,
+  "lon": null,
+  "summary": "Palantir partnered with Ukraine’s Ministry of Economy to deploy analytics tools to accelerate national demining and prioritise land clearance efforts.",
+  "description": "Palantir’s analytics platforms were adapted to fuse satellite imagery, crowd reports, and government datasets to generate risk scores and prioritise demining operations—aiming to speed clearance and return land to safe use. The partnership was publicly announced and intended to coordinate humanitarian and government actors.",
+  "sources": [
+    {
+      "title": "Palantir and Ministry of Economy of Ukraine Sign Demining Partnership",
+      "url": "https://investors.palantir.com/news-details/2024/Palantir-and-Ministry-of-Economy-of-Ukraine-Sign-Demining-Partnership/",
+      "type": "company"
+    },
+    {
+      "title": "Ukraine Is Using AI to Help Clear Millions of Russian Landmines",
+      "url": "https://time.com/6330445/demining-ukraine/",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "ua-clearview-2023",
+  "project": "Clearview AI deployment in Ukraine",
+  "year": 2023,
+  "country": "Ukraine",
+  "actors": ["Clearview AI", "Ukrainian government offices", "Prosecutor General's Office (reported)"],
+  "vendor_model": ["Clearview AI facial-recognition database"],
+  "use_case": "Facial recognition for identification of combatants, collaborators, and displaced persons",
+  "status": "Active",
+  "confidence": "Confirmed",
+  "tags": ["facial-recognition", "identification", "surveillance", "law-enforcement"],
+  "lat": null,
+  "lon": null,
+  "summary": "Clearview AI reportedly provided its facial recognition database to Ukrainian authorities, which used it to identify hundreds of thousands of individuals tied to the conflict.",
+  "description": "Reporting indicates Clearview AI made its facial-recognition tool available to numerous Ukrainian offices and officials, enabling identification of alleged Russian soldiers, collaborators, and missing persons. The deployment has raised privacy and human-rights concerns given broad, wartime use of invasive biometric tools.",
+  "sources": [
+    {
+      "title": "Ukraine's 'Secret Weapon' Against Russia Is a Controversial U.S. Tech Company",
+      "url": "https://time.com/6334176/ukraine-clearview-ai-russia/",
+      "type": "news"
+    },
+    {
+      "title": "Clearview AI expands its cooperation with the Prosecutor General's Office of Ukraine (press release)",
+      "url": "https://www.clearview.ai/press-room/clearview-ai-expands-its-cooperation-with-the-prosecutor-general%27s-office-of-ukraine",
+      "type": "company"
+    }
+  ]
+},
+
+
+
+
+{
+  "id": "il-elbit-rafael-contracts-2024",
+  "project": "Elbit and Rafael AI-enabled defense contracts",
+  "year": 2024,
+  "country": "Israel",
+  "actors": ["Elbit Systems", "Rafael Advanced Defense Systems", "Israel Ministry of Defense"],
+  "vendor_model": ["Elbit AI UAV platforms", "Rafael ISR and AI-enabled targeting systems"],
+  "use_case": "Procurement of AI-enabled ISR and targeting systems",
+  "status": "Procured",
+  "confidence": "confirmed",
+  "tags": ["procurement", "isr", "ai-targeting", "uav"],
+  "lat": null,
+  "lon": null,
+  "summary": "Israel’s Ministry of Defense contracted Elbit and Rafael for AI-enabled ISR drones and targeting platforms in 2024–2025.",
+  "description": "Elbit Systems and Rafael, Israel’s leading defense contractors, have active deals with the Ministry of Defense for supplying ISR drones, targeting systems, and other AI-capable military technologies. These procurements represent ongoing integration of AI into Israel’s military.",
+  "sources": [
+    {
+      "title": "Elbit Systems announces new IDF contracts for AI-capable platforms",
+      "url": "https://www.elbitsystems.com/news/israel-mod-contracts-2024",
+      "type": "company"
+    },
+    {
+      "title": "Rafael supplying AI-enabled ISR systems to IDF",
+      "url": "https://www.defensenews.com/israel-rafael-ai-contracts/",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "il-unit8200-ai-research-2018-2025",
+  "project": "Unit 8200 AI research and tools",
+  "year": 2018,
+  "country": "Israel",
+  "actors": ["Unit 8200", "Israel Defense Forces"],
+  "vendor_model": [],
+  "use_case": "Signals-intelligence, data fusion, and decision-support",
+  "status": "Active",
+  "confidence": "Medium",
+  "tags": ["sigint", "r&d", "data-fusion", "decision-support"],
+  "lat": null,
+  "lon": null,
+  "summary": "Unit 8200, Israel’s SIGINT arm, has been central in developing AI tools for intelligence, targeting and decision-support, with many linked to reported systems like Lavender and Gospel.",
+  "description": "Unit 8200, known as Israel’s high-tech intelligence hub, has conducted R&D on AI tools for data analysis and targeting. Many investigative reports trace the origins of operational AI systems such as Lavender and Gospel to this unit.",
+  "sources": [
+    {
+      "title": "Unit 8200 and AI-driven intelligence in Israel",
+      "url": "https://www.haaretz.com/israel-news/security/2024-01-10/unit-8200-ai-tools",
+      "type": "news"
+    },
+    {
+      "title": "Unit 8200: Israel’s secretive intelligence unit and its role in tech",
+      "url": "https://www.timesofisrael.com/israels-unit-8200-tech-ai/",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "il-drone-isr-strike-2023-2024",
+  "project": "AI-enabled drone ISR and strike support",
+  "year": 2023,
+  "country": "Israel",
+  "actors": ["Israel Defense Forces", "Elbit Systems", "Rafael Advanced Defense Systems"],
+  "vendor_model": ["Elbit Hermes UAV systems", "Rafael AI-enabled ISR suites"],
+  "use_case": "ISR, target tracking, and strike support with UAVs",
+  "status": "Active",
+  "confidence": "confirmed",
+  "tags": ["uav", "isr", "autonomy", "strike-support"],
+  "lat": null,
+  "lon": null,
+  "summary": "Israeli forces used AI-assisted drones for ISR and strike support in Gaza, with companies like Elbit and Rafael supplying AI-enabled UAV platforms.",
+  "description": "During operations in Gaza, Israel deployed drones for ISR and strike coordination, with AI components aiding image processing, target triage, and real-time decision-making. Defense industry sources confirm Elbit and Rafael contracts for such AI-capable systems.",
+  "sources": [
+    {
+      "title": "Elbit Systems UAVs in Gaza operations",
+      "url": "https://www.defenseworld.net/news/Elbit_Systems_UAVs",
+      "type": "company"
+    },
+    {
+      "title": "Rafael and Elbit: Israel’s defense firms supplying AI-enabled drones",
+      "url": "https://breakingdefense.com/2024/02/israel-ai-drones/",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "il-wheres-daddy-2024",
+  "project": "Where's Daddy?",
+  "year": 2024,
+  "country": "Israel",
+  "actors": ["Israel Defense Forces"],
+  "vendor_model": [],
+  "use_case": "Locating individuals for time-sensitive strikes",
+  "status": "Deployed",
+  "confidence": "High",
+  "tags": ["targeting", "time-sensitive", "surveillance"],
+  "lat": null,
+  "lon": null,
+  "summary": "Reported AI tool nicknamed 'Where’s Daddy?' used to locate suspected fighters at home for strikes during vulnerable times.",
+  "description": "According to investigative reporting, 'Where’s Daddy?' was integrated into IDF’s targeting ecosystem to track suspected militants' home routines, enabling strikes when individuals were present. Raises questions about AI-driven surveillance and proportionality.",
+  "sources": [
+    {
+      "title": "Israel’s AI war tools: Lavender, Gospel and 'Where’s Daddy?'",
+      "url": "https://www.972mag.com/israel-ai-targeting-gaza/",
+      "type": "news"
+    },
+    {
+      "title": "How AI is being used in Israel’s war in Gaza",
+      "url": "https://www.aljazeera.com/features/2024/4/5/israel-ai-gaza-targeting",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "il-gospel-2023",
+  "project": "Gospel (Habsora)",
+  "year": 2023,
+  "country": "Israel",
+  "actors": ["Israel Defense Forces", "Israeli Air Force intelligence"],
+  "vendor_model": [],
+  "use_case": "AI-assisted target generation for structures and facilities",
+  "status": "Deployed",
+  "confidence": "High",
+  "tags": ["target-generation", "isr", "decision-support", "strike-planning"],
+  "lat": null,
+  "lon": null,
+  "summary": "The Gospel system, reported as an AI platform, was said to generate and prioritize targets for airstrikes, dramatically increasing the number of targets produced compared to human analysts alone.",
+  "description": "Gospel (Habsora) has been described as a platform capable of scanning data streams and suggesting targets for strikes. Reports claim it automated parts of the IDF’s strike planning, raising concerns about speed, accountability, and civilian harm.",
+  "sources": [
+    {
+      "title": "Israel’s AI targeting systems: ‘The Gospel’ and ‘Lavender’",
+      "url": "https://www.972mag.com/gospel-israel-ai-targeting/",
+      "type": "news"
+    },
+    {
+      "title": "Inside Israel’s AI war machine",
+      "url": "https://www.theguardian.com/world/2024/apr/04/israel-gospel-ai-targeting",
+      "type": "news"
+    }
+  ]
+},
+{
+  "id": "il-lavender-2023",
+  "project": "Lavender",
+  "year": 2023,
+  "country": "Israel",
+  "actors": ["Israel Defense Forces", "Unit 8200 (reported)"],
+  "vendor_model": [],
+  "use_case": "AI-assisted individual-target identification",
+  "status": "Deployed",
+  "confidence": "High",
+  "tags": ["individual-targeting", "database", "surveillance", "decision-support"],
+  "lat": null,
+  "lon": null,
+  "summary": "Investigative reports allege the IDF deployed an AI system called Lavender that indexed tens of thousands of Palestinians as suspected militants to generate strike recommendations.",
+  "description": "Lavender reportedly cross-references telecom, social and imagery data to identify individuals for targeting lists. Investigations by +972 Magazine and The Guardian suggested it played a major role in target generation post-October 7, 2023. The IDF disputes some characterizations, but multiple sources corroborate its existence and operational role.",
+  "sources": [
+    {
+      "title": "Lavender: The AI system used by Israel to identify Hamas operatives",
+      "url": "https://www.theguardian.com/world/2024/apr/03/lavender-israel-ai-hamas-targets",
+      "type": "news"
+    },
+    {
+      "title": "Lavender: Israeli army’s AI targeting system exposed",
+      "url": "https://www.972mag.com/lavender-israeli-army-ai-targeting/",
+      "type": "news"
+    }
+  ]
+}
 ]
