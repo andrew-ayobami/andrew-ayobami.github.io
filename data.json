@@ -1123,8 +1123,8 @@
   "tags": ["targeting", "time-sensitive", "surveillance"],
   "lat": null,
   "lon": null,
-  "summary": "Reported AI tool nicknamed 'Where’s Daddy?' used to locate suspected fighters at home for strikes during vulnerable times.",
-  "description": "According to investigative reporting, 'Where’s Daddy?' was integrated into IDF’s targeting ecosystem to track suspected militants' home routines, enabling strikes when individuals were present. Raises questions about AI-driven surveillance and proportionality.",
+  "summary": "Reported AI tool nicknamed 'Where’s Daddy?' used to locate suspected Palestinian fighters in their homes for strikes during Israel's invasion of the Gaza.",
+  "description": "According to investigative reporting, 'Where’s Daddy?' was integrated into IDF’s targeting ecosystem to track suspected Palestinians' home routines, enabling strikes when individuals were present. The families of these suspects were often present during the attacks, which raises questions about proportionality and AI-driven surveillance.",
   "sources": [
     {
       "title": "Israel’s AI war tools: Lavender, Gospel and 'Where’s Daddy?'",
@@ -1180,7 +1180,7 @@
   "lat": null,
   "lon": null,
   "summary": "Investigative reports allege the IDF deployed an AI system called Lavender that indexed tens of thousands of Palestinians as suspected militants to generate strike recommendations.",
-  "description": "Lavender reportedly cross-references telecom, social and imagery data to identify individuals for targeting lists. Investigations by +972 Magazine and The Guardian suggested it played a major role in target generation post-October 7, 2023. The IDF disputes some characterizations, but multiple sources corroborate its existence and operational role.",
+  "description": "Lavender reportedly cross-references telecom, social and imagery data to identify individuals for targeting lists. Investigations by +972 Magazine and The Guardian suggested it played a major role in target generation post-October 7, 2023. The IDF disputes some characterizations, but multiple sources corroborate its existence and operational role. Its use raises several important questions about Israel's violation of international humanitarian principles",
   "sources": [
     {
       "title": "Lavender: The AI system used by Israel to identify Hamas operatives",
