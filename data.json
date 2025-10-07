@@ -808,11 +808,6 @@
       "title": "Ukraine rolls out dozens of AI systems to help its drones hit targets",
       "url": "https://www.reuters.com/world/europe/ukraine-rolls-out-dozens-ai-systems-help-its-drones-hit-targets-2024-10-31/",
       "type": "news"
-    },
-    {
-      "title": "Ukraine rolls out dozens of AI systems to help its drones hit targets (re-reporting)",
-      "url": "https://ca.news.yahoo.com/ukraine-rolls-dozens-ai-systems-112049603.html",
-      "type": "news"
     }
   ]
 },
@@ -1119,7 +1114,7 @@
   "vendor_model": [],
   "use_case": "Locating individuals for time-sensitive strikes",
   "status": "Deployed",
-  "confidence": "High",
+  "confidence": "Medium",
   "tags": ["targeting", "time-sensitive", "surveillance"],
   "lat": null,
   "lon": null,
@@ -1127,14 +1122,14 @@
   "description": "According to investigative reporting, 'Where’s Daddy?' was integrated into IDF’s targeting ecosystem to track suspected Palestinians' home routines, enabling strikes when individuals were present. The families of these suspects were often present during the attacks, which raises questions about proportionality and AI-driven surveillance.",
   "sources": [
     {
-      "title": "Israel’s AI war tools: Lavender, Gospel and 'Where’s Daddy?'",
-      "url": "https://www.972mag.com/israel-ai-targeting-gaza/",
+      "title": "Israel's 'Where's Daddy?' AI system helps target suspected Hamas militants when they're at home with their families, report says",
+      "url": "https://africa.businessinsider.com/military-and-defense/israels-wheres-daddy-ai-system-helps-target-suspected-hamas-militants-when-theyre-at/fpnrgh3",
       "type": "news"
     },
     {
-      "title": "How AI is being used in Israel’s war in Gaza",
-      "url": "https://www.aljazeera.com/features/2024/4/5/israel-ai-gaza-targeting",
-      "type": "news"
+      "title": "‘Lavender’: The AI machine directing Israel’s bombing spree in Gaza",
+      "url": "https://www.972mag.com/lavender-ai-israeli-army-gaza/",
+      "type": "article"
     }
   ]
 },
@@ -1155,14 +1150,14 @@
   "description": "Gospel (Habsora) has been described as a platform capable of scanning data streams and suggesting targets for strikes. Reports claim it automated parts of the IDF’s strike planning, raising concerns about speed, accountability, and civilian harm.",
   "sources": [
     {
-      "title": "Israel’s AI targeting systems: ‘The Gospel’ and ‘Lavender’",
-      "url": "https://www.972mag.com/gospel-israel-ai-targeting/",
-      "type": "news"
+      "title": "‘A mass assassination factory’: Inside Israel’s calculated bombing of Gaza",
+      "url": "https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/",
+      "type": "article"
     },
     {
-      "title": "Inside Israel’s AI war machine",
-      "url": "https://www.theguardian.com/world/2024/apr/04/israel-gospel-ai-targeting",
-      "type": "news"
+      "title": "Israel is using an AI system to find targets in Gaza. Experts say it's just the start",
+      "url": "https://www.npr.org/2023/12/14/1218643254/israel-is-using-an-ai-system-to-find-targets-in-gaza-experts-say-its-just-the-st",
+      "type": "article"
     }
   ]
 },
@@ -1183,13 +1178,13 @@
   "description": "Lavender reportedly cross-references telecom, social and imagery data to identify individuals for targeting lists. Investigations by +972 Magazine and The Guardian suggested it played a major role in target generation post-October 7, 2023. The IDF disputes some characterizations, but multiple sources corroborate its existence and operational role. Its use raises several important questions about Israel's violation of international humanitarian principles",
   "sources": [
     {
-      "title": "Lavender: The AI system used by Israel to identify Hamas operatives",
-      "url": "https://www.theguardian.com/world/2024/apr/03/lavender-israel-ai-hamas-targets",
-      "type": "news"
+      "title": "‘Lavender’: The AI machine directing Israel’s bombing spree in Gaza",
+      "url": "https://www.972mag.com/lavender-ai-israeli-army-gaza/",
+      "type": "article"
     },
     {
-      "title": "Lavender: Israeli army’s AI targeting system exposed",
-      "url": "https://www.972mag.com/lavender-israeli-army-ai-targeting/",
+      "title": "‘The machine did it coldly’: Israel used AI to identify 37,000 Hamas targets",
+      "url": "https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes",
       "type": "news"
     }
   ]
